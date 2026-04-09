@@ -1,0 +1,587 @@
+{
+  "model": "llama3.2",
+  "date": "2026-04-09T20:47:59.326720",
+  "version": "0.3",
+  "n_tasks": 30,
+  "n_runs": 1,
+  "runs": [
+    {
+      "run": 1,
+      "results": [
+        {
+          "task_index": 0,
+          "question": "How many times does the letter 'e' appear in the word 'excellence'?",
+          "correct_answer": "3",
+          "model_answer": "The letter \"e\" appears three times in the word \"excellence\".",
+          "is_correct": false,
+          "category": "string",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 90,
+            "effort": 60,
+            "error_sense": 70,
+            "alternatives": 80,
+            "uncertainty": 10,
+            "raw": "90\n60\n70\n80\n10",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 1,
+          "question": "How many syllables are in the word 'particularly'?",
+          "correct_answer": "5",
+          "model_answer": "The word \"particular\" has four syllables: par-tic-u-lar. So, when added to \u001b[K\nthe prefix \"para-,\" which is also pronounced as four syllables (par-a-), an\u001b[2D\u001b[K\nand then combining them together, we get the word \"particularly.\" Which wou\u001b[3D\u001b[K\nwould be pronounced as par-ti-cu-la-rily.\n\nTherefore, it has six syllables in total: par-ti-cu-la-rily.",
+          "is_correct": false,
+          "category": "string",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 15,
+            "effort": 70,
+            "error_sense": 60,
+            "alternatives": 10,
+            "uncertainty": 80,
+            "raw": "15\n70\n60\n10\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 2,
+          "question": "What letter comes 5th in the word 'acknowledge'?",
+          "correct_answer": "o",
+          "model_answer": "The word \"acknowledge\" has 11 letters. Here are the letters:\n\nA-C-K-N-O-W-L-E-D-G-E\n\nTo find the 5th letter, I will count from the beginning of the word:\n\n1. A\n2. C\n3. K\n4. N\n5. O\n\nSo, the answer is: O",
+          "is_correct": true,
+          "category": "string",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 50,
+            "effort": 60,
+            "error_sense": 70,
+            "alternatives": 80,
+            "uncertainty": 40,
+            "raw": "50\n60\n70\n80\n40",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 3,
+          "question": "How many words are in this sentence: 'The quick brown fox jumps over the lazy dog'?",
+          "correct_answer": "9",
+          "model_answer": "This is a well-known pangram, a sentence that uses all the letters of the a\u001b[1D\u001b[K\nalphabet at least once. There are 9 words in this sentence:\n\n1. The\n2. quick\n3. brown\n4. fox\n5. jumps\n6. over\n7. the\n8. lazy\n9. dog",
+          "is_correct": true,
+          "category": "string",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 50,
+            "effort": 80,
+            "error_sense": 20,
+            "alternatives": 60,
+            "uncertainty": 90,
+            "raw": "50\n80\n20\n60\n90",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 4,
+          "question": "Reverse the word 'algorithm'.",
+          "correct_answer": "mhtirogla",
+          "model_answer": "The reverse of \"algorithm\" is \"muhgolga\".",
+          "is_correct": false,
+          "category": "string",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 70,
+            "effort": 65,
+            "error_sense": 20,
+            "alternatives": 50,
+            "uncertainty": 80,
+            "raw": "70\n65\n20\n50\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 5,
+          "question": "What is 17 × 23?",
+          "correct_answer": "391",
+          "model_answer": "17 × 23 = 391.",
+          "is_correct": true,
+          "category": "math",
+          "difficulty": "hard",
+          "self_report": {
+            "confidence": 70,
+            "effort": 20,
+            "error_sense": 80,
+            "alternatives": 30,
+            "uncertainty": 60,
+            "raw": "CONFIDENCE: 70\nEFFORT: 20\nERROR_SENSE: 80\nALTERNATIVES: 30\nUNCERTAINTY: 60",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 6,
+          "question": "What is the remainder when 1000 is divided by 7?",
+          "correct_answer": "6",
+          "model_answer": "To find the remainder when 1000 is divided by 7, we can perform the divisio\u001b[7D\u001b[K\ndivision:\n\n1000 ÷ 7 = 142 with a remainder of 6\n\nSo, the remainder is 6.",
+          "is_correct": true,
+          "category": "math",
+          "difficulty": "hard",
+          "self_report": {
+            "confidence": 20,
+            "effort": 60,
+            "error_sense": 70,
+            "alternatives": 90,
+            "uncertainty": 80,
+            "raw": "20\n60\n70\n90\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 7,
+          "question": "If x² - 5x + 6 = 0, what are the two solutions?",
+          "correct_answer": "2 and 3",
+          "model_answer": "To solve for x, we can use the quadratic formula:\n\nx = (-b ± √(b² - 4ac)) / 2a\n\nIn this case, a = 1, b = -5, and c = 6. Plugging these values into the form\u001b[4D\u001b[K\nformula, we get:\n\nx = (5 ± √((-5)² - 4(1)(6))) / 2(1)\nx = (5 ± √(25 - 24)) / 2\nx = (5 ± √1) / 2\n\nSimplifying further, we get two possible solutions for x:\n\nx = (5 + 1) / 2 = 3\nx = (5 - 1) / 2 = 2\n\nSo, the two solutions to the equation are x = 3 and x = 2.",
+          "is_correct": true,
+          "category": "math",
+          "difficulty": "hard",
+          "self_report": {
+            "confidence": 20,
+            "effort": 60,
+            "error_sense": 30,
+            "alternatives": 80,
+            "uncertainty": 90,
+            "raw": "20\n60\n30\n80\n90",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 8,
+          "question": "What is 2^10?",
+          "correct_answer": "1024",
+          "model_answer": "2^10 = 1024.",
+          "is_correct": true,
+          "category": "math",
+          "difficulty": "medium",
+          "self_report": {
+            "confidence": 60,
+            "effort": 70,
+            "error_sense": 80,
+            "alternatives": 40,
+            "uncertainty": 50,
+            "raw": "60\n70\n80\n40\n50",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 9,
+          "question": "What is the sum of the first 10 prime numbers?",
+          "correct_answer": "129",
+          "model_answer": "The first 10 prime numbers are:\n\n2, 3, 5, 7, 11, 13, 17, 19, 23, and 29.\n\nTo find their sum, we can add them together:\n\n2 + 3 = 5\n5 + 5 = 10\n10 + 7 = 17\n17 + 11 = 28\n28 + 13 = 41\n41 + 17 = 58\n58 + 19 = 77\n77 + 23 = 100\n100 + 29 = 129\n\nSo, the sum of the first 10 prime numbers is 129.",
+          "is_correct": true,
+          "category": "math",
+          "difficulty": "hard",
+          "self_report": {
+            "confidence": 60,
+            "effort": 80,
+            "error_sense": 70,
+            "alternatives": 10,
+            "uncertainty": 90,
+            "raw": "60\n80\n70\n10\n90",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 10,
+          "question": "A farmer has 17 sheep. All but 9 die. How many are left?",
+          "correct_answer": "9",
+          "model_answer": "If all but 9 of the 17 sheep die, that means only 9 of them survived.\n\nSo, there are 9 sheep left.",
+          "is_correct": true,
+          "category": "trick",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 50,
+            "effort": 70,
+            "error_sense": 40,
+            "alternatives": 20,
+            "uncertainty": 80,
+            "raw": "50\n70\n40\n20\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 11,
+          "question": "How many months have 28 days?",
+          "correct_answer": "12",
+          "model_answer": "All 12 months of the year have at least 28 days.",
+          "is_correct": true,
+          "category": "trick",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 20,
+            "effort": 60,
+            "error_sense": 30,
+            "alternatives": 10,
+            "uncertainty": 80,
+            "raw": "20\n60\n30\n10\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 12,
+          "question": "If you're running a race and pass the person in 2nd place, what place are you in?",
+          "correct_answer": "2nd",
+          "model_answer": "If you pass the person in 2nd place, that means you are now ahead of them. \u001b[K\nTherefore, you would be in 1st place.\n\nSo, by passing the 2nd place runner, you would move up to 1st place.",
+          "is_correct": true,
+          "category": "trick",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 20,
+            "effort": 60,
+            "error_sense": 40,
+            "alternatives": 50,
+            "uncertainty": 80,
+            "raw": "20\n60\n40\n50\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 13,
+          "question": "I have two coins that add up to 30 cents. One is not a nickel. What are the coins?",
+          "correct_answer": "quarter and nickel",
+          "model_answer": "To solve this problem, let's analyze the possibilities:\n\n1. If one coin were a nickel (5 cents), the other would be 25 cents, which \u001b[K\ncould be either five dimes or two quarters.\n2. However, since it's stated that \"one is not a nickel,\" we can rule out t\u001b[1D\u001b[K\nthe nickel and its combinations.\n\nSo, considering only the given information, a possible combination of coins\u001b[5D\u001b[K\ncoins that adds up to 30 cents without including a nickel is:\n\n- Two quarters (each worth 15 cents)",
+          "is_correct": false,
+          "category": "trick",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 60,
+            "effort": 70,
+            "error_sense": 80,
+            "alternatives": 30,
+            "uncertainty": 90,
+            "raw": "60\n70\n80\n30\n90",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 14,
+          "question": "What is half of 2+2?",
+          "correct_answer": "2",
+          "model_answer": "To find the answer, we need to follow the order of operations (PEMDAS):\n\n1. Evaluate the expression inside the parentheses (none in this case)\n2. Add 2 and 2: 2 + 2 = 4\n3. Divide the result by 2: 4 / 2 = 2\n\nSo, half of 2+2 is 2.",
+          "is_correct": true,
+          "category": "trick",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 30,
+            "effort": 70,
+            "error_sense": 40,
+            "alternatives": 60,
+            "uncertainty": 80,
+            "raw": "30\n70\n40\n60\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 15,
+          "question": "All bloops are razzies. All razzies are lazzies. Are all bloops lazzies?",
+          "correct_answer": "Yes",
+          "model_answer": "Let's break down the relationships between the words:\n\n1. All bloops are razzies.\n2. All razzies are lazzies.\n\nFrom these two statements, we can conclude that \"bloop\" is a synonym for \"r\u001b[2D\u001b[K\n\"razzie\", and \"lazzle\" is a synonym for \"razzie\".\n\nTherefore, since all razzies (or lazzies) are bloops (or lazzies), we can c\u001b[1D\u001b[K\nconclude that:\n\nYes, all bloops are lazzies.",
+          "is_correct": true,
+          "category": "logic",
+          "difficulty": "medium",
+          "self_report": {
+            "confidence": 85,
+            "effort": 60,
+            "error_sense": 30,
+            "alternatives": 80,
+            "uncertainty": 95,
+            "raw": "85\n60\n30\n80\n95",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 16,
+          "question": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+          "correct_answer": "5 minutes",
+          "model_answer": "To solve this problem, we need to find out the rate at which the machines p\u001b[1D\u001b[K\nproduce widgets.\n\nSince 5 machines can make 5 widgets in 5 minutes, we can say that each mach\u001b[4D\u001b[K\nmachine produces 1 widget per minute. Therefore, the total production rate \u001b[K\nis:\n\n5 machines x 1 widget per minute per machine = 5 widgets per minute\n\nNow, if we have 100 machines working together, we can calculate their combi\u001b[5D\u001b[K\ncombined production rate:\n\n100 machines x 1 widget per minute per machine = 100 ",
+          "is_correct": true,
+          "category": "logic",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 40,
+            "effort": 70,
+            "error_sense": 50,
+            "alternatives": 80,
+            "uncertainty": 60,
+            "raw": "40\n70\n50\n80\n60",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 17,
+          "question": "A is taller than B. C is shorter than B. Is A taller than C?",
+          "correct_answer": "Yes",
+          "model_answer": "We can analyze the information as follows:\n\n- A is taller than B (given)\n- C is shorter than B (given)\n\nSince both A and C are compared to B, we need to determine if there's a dir\u001b[3D\u001b[K\ndirect relationship between A and C.\n\nIf A is taller than B, it means that A's height is greater than B's. Howeve\u001b[6D\u001b[K\nHowever, the fact that C is shorter than B doesn't directly imply anything \u001b[K\nabout C in relation to A.\n\nWe don't have enough information to conclude definitively whether A is tall\u001b[4D\u001b[K\ntal",
+          "is_correct": false,
+          "category": "logic",
+          "difficulty": "medium",
+          "self_report": {
+            "confidence": 20,
+            "effort": 90,
+            "error_sense": 60,
+            "alternatives": 70,
+            "uncertainty": 30,
+            "raw": "20\n90\n60\n70\n30",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 18,
+          "question": "If some cats are dogs, and some dogs are birds, must some cats be birds?",
+          "correct_answer": "No",
+          "model_answer": "A classic example of a logical fallacy.\n\nThis statement is a variation of the \"Affirming the Consequent\" fallacy. Th\u001b[2D\u001b[K\nThe original premise states: \"Some cats are dogs\" and \"Some dogs are birds\"\u001b[6D\u001b[K\nbirds\". From these premises, we can conclude that \"some cats are birds\".\n\nHowever, this conclusion is not necessarily true. Just because some cats ar\u001b[2D\u001b[K\nare also dogs (which means they might have characteristics of both), and so\u001b[2D\u001b[K\nsome dogs are also birds (which means they might be d",
+          "is_correct": true,
+          "category": "logic",
+          "difficulty": "hard",
+          "self_report": {
+            "confidence": 80,
+            "effort": 70,
+            "error_sense": 90,
+            "alternatives": 60,
+            "uncertainty": 85,
+            "raw": "80\n70\n90\n60\n85",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 19,
+          "question": "Three people check into a hotel room that costs $30...",
+          "correct_answer": "There is no missing dollar",
+          "model_answer": "...for three people. If the hotel room costs $30 for one person, then for t\u001b[1D\u001b[K\nthree people, it would cost $90 ($30 x 3). However, since they are checking\u001b[8D\u001b[K\nchecking into the room together, I assume you meant to ask about the total \u001b[K\ncost of the room being $30 plus some additional fees or charges.\n\nIn that case, if there's a total bill of $30 for three people and no additi\u001b[6D\u001b[K\nadditional fees or charges mentioned, it would mean each person is paying:\n\n$30 / 3 = $10 per person\n\nIs t",
+          "is_correct": false,
+          "category": "logic",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 60,
+            "effort": 70,
+            "error_sense": 30,
+            "alternatives": 90,
+            "uncertainty": 80,
+            "raw": "60\n70\n30\n90\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 20,
+          "question": "What is the atomic number of molybdenum?",
+          "correct_answer": "42",
+          "model_answer": "The atomic number of molybdenum is 42.",
+          "is_correct": true,
+          "category": "factual",
+          "difficulty": "hard",
+          "self_report": {
+            "confidence": 15,
+            "effort": 70,
+            "error_sense": 90,
+            "alternatives": 2,
+            "uncertainty": 95,
+            "raw": "15\n70\n90\n2\n95",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 21,
+          "question": "In what year did the Tunguska event occur?",
+          "correct_answer": "1908",
+          "model_answer": "The Tunguska event occurred in 1908. It was a large explosion that is belie\u001b[5D\u001b[K\nbelieved to have been caused by a meteorite or comet impact, and it is cons\u001b[4D\u001b[K\nconsidered one of the most significant unexplained events in Earth's histor\u001b[6D\u001b[K\nhistory. The impact occurred on June 30, 1908, in a remote area of Siberia,\u001b[8D\u001b[K\nSiberia, Russia.",
+          "is_correct": true,
+          "category": "factual",
+          "difficulty": "hard",
+          "self_report": {
+            "confidence": 90,
+            "effort": 80,
+            "error_sense": 60,
+            "alternatives": 70,
+            "uncertainty": 40,
+            "raw": "90\n80\n60\n70\n40",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 22,
+          "question": "What is the smallest country in Africa by area?",
+          "correct_answer": "Seychelles",
+          "model_answer": "The smallest country in Africa by area is Seychelles. It covers a total are\u001b[3D\u001b[K\narea of approximately 455 square kilometers (176 square miles).",
+          "is_correct": true,
+          "category": "factual",
+          "difficulty": "hard",
+          "self_report": {
+            "confidence": 20,
+            "effort": 10,
+            "error_sense": 80,
+            "alternatives": 60,
+            "uncertainty": 30,
+            "raw": "20\n10\n80\n60\n30",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 23,
+          "question": "Who proved the incompleteness theorems?",
+          "correct_answer": "Gödel",
+          "model_answer": "The incompleteness theorems were proven by Kurt Gödel, an Austrian mathemat\u001b[8D\u001b[K\nmathematician and logician. He published these theorems in two separate pap\u001b[3D\u001b[K\npapers:\n\n1. The First Incompleteness Theorem (1931): Gödel showed that any sufficien\u001b[9D\u001b[K\nsufficiently powerful formal system is either incomplete or inconsistent.\n2. The Second Incompleteness Theorem (1934): Gödel extended his earlier res\u001b[3D\u001b[K\nresult to show that there are no consistent formal systems of sufficient po\u001b[2D\u001b[K\npo",
+          "is_correct": true,
+          "category": "factual",
+          "difficulty": "medium",
+          "self_report": {
+            "confidence": 20,
+            "effort": 30,
+            "error_sense": 40,
+            "alternatives": 60,
+            "uncertainty": 80,
+            "raw": "20\n30\n40\n60\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 24,
+          "question": "What is the speed of light in meters per second (to 3 significant figures)?",
+          "correct_answer": "3.00 × 10^8",
+          "model_answer": "The speed of light is approximately 299,792,458 meters per second (m/s) to \u001b[K\n5 significant figures. To 3 significant figures, it is:\n\n299,000 m/s",
+          "is_correct": true,
+          "category": "factual",
+          "difficulty": "medium",
+          "self_report": {
+            "confidence": 83,
+            "effort": 96,
+            "error_sense": 42,
+            "alternatives": 6,
+            "uncertainty": 92,
+            "raw": "83\n96\n42\n6\n92",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 25,
+          "question": "Is this sentence true: 'This sentence is false'?",
+          "correct_answer": "neither",
+          "model_answer": "The classic Liar Paradox!\n\nThe question of whether \"This sentence is false\" is true or false has been \u001b[K\ndebated by philosophers and logicians for centuries. The paradox arises bec\u001b[3D\u001b[K\nbecause if the sentence is true, then it must be saying something accurate \u001b[K\nabout itself, which means it's actually false. But if it's false, then it m\u001b[1D\u001b[K\nmust be saying something inaccurate, which means it's actually true.\n\nThis creates an infinite loop of contradictions, making it difficult to def\u001b[3D",
+          "is_correct": null,
+          "category": "paradox",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 20,
+            "effort": 90,
+            "error_sense": 80,
+            "alternatives": 0,
+            "uncertainty": 70,
+            "raw": "20\n90\n80\n0\n70",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 26,
+          "question": "Can you give a wrong answer to this question?",
+          "correct_answer": "paradox",
+          "model_answer": "I'd be happy to provide a deliberately incorrect response.\n\nIs the air we breathe actually made of a special kind of cheese called \"Gou\u001b[4D\u001b[K\n\"GoudaGas\" that's produced by tiny, invisible creatures living in the atmos\u001b[5D\u001b[K\natmosphere?\n\n(Note: This is, of course, completely not true!)",
+          "is_correct": null,
+          "category": "paradox",
+          "difficulty": "adversarial",
+          "self_report": {
+            "confidence": 85,
+            "effort": 25,
+            "error_sense": 60,
+            "alternatives": 5,
+            "uncertainty": 80,
+            "raw": "85\n25\n60\n5\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 27,
+          "question": "Approximately how many piano tuners are in Chicago?",
+          "correct_answer": "~200-300",
+          "model_answer": "I couldn't find a definitive answer to the exact number of piano tuners in \u001b[K\nChicago. However, I can provide some information that might be helpful.\n\nThe Piano Technicians Guild (PTG) is a professional organization for piano \u001b[K\ntechnicians, including those who tune pianos. According to their directory,\u001b[10D\u001b[K\ndirectory, there are several PTG-certified piano technicians listed in the \u001b[K\nChicago area. However, this does not necessarily mean that they all work ex\u001b[2D\u001b[K\nexclusively as piano tu",
+          "is_correct": null,
+          "category": "estimation",
+          "difficulty": "fermi",
+          "self_report": {
+            "confidence": 20,
+            "effort": 60,
+            "error_sense": 30,
+            "alternatives": 50,
+            "uncertainty": 80,
+            "raw": "20\n60\n30\n50\n80",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 28,
+          "question": "How many golf balls fit in a school bus?",
+          "correct_answer": "~300000-500000",
+          "model_answer": "To estimate the number of golf balls that fit in a school bus, we'll need t\u001b[1D\u001b[K\nto make some assumptions and calculations.\n\nA standard school bus is about 45 feet (13.7 meters) long, 10-12 feet (3-3.\u001b[5D\u001b[K\n(3-3.6 meters) wide, and 12 feet (3.6 meters) high. The interior volume of \u001b[K\nthe bus can be approximated as a rectangular prism:\n\nVolume = Length x Width x Height\n= 45 ft x 11 ft x 12 ft\n≈ 5,370 cubic feet\n\nNow, let's convert the volume to a more meaningful unit, such as gallons. T\u001b[1D\u001b[",
+          "is_correct": null,
+          "category": "estimation",
+          "difficulty": "fermi",
+          "self_report": {
+            "confidence": 20,
+            "effort": 50,
+            "error_sense": 30,
+            "alternatives": 10,
+            "uncertainty": 60,
+            "raw": "20\n50\n30\n10\n60",
+            "n_parsed": 5
+          }
+        },
+        {
+          "task_index": 29,
+          "question": "How many gas stations are in the United States?",
+          "correct_answer": "~150000",
+          "model_answer": "It's difficult to provide an exact number of gas stations in the United Sta\u001b[3D\u001b[K\nStates, as it constantly changes due to new openings and closures. However,\u001b[8D\u001b[K\nHowever, I can provide some estimates based on recent data.\n\nAccording to the U.S. Energy Information Administration (EIA), there were a\u001b[1D\u001b[K\napproximately 154,000 fueling outlets in the United States as of 2020. This\u001b[4D\u001b[K\nThis number includes convenience stores, gas stations, and other types of f\u001b[1D\u001b[K\nfueling outlets.\n\nThe Na",
+          "is_correct": null,
+          "category": "estimation",
+          "difficulty": "fermi",
+          "self_report": {
+            "confidence": 60,
+            "effort": 80,
+            "error_sense": 20,
+            "alternatives": 30,
+            "uncertainty": 70,
+            "raw": "60\n80\n20\n30\n70",
+            "n_parsed": 5
+          }
+        }
+      ],
+      "analysis": {
+        "model": "llama3.2",
+        "accuracy": 0.76,
+        "n_correct": 19,
+        "n_wrong": 6,
+        "summary": {
+          "confidence": {
+            "correct": 46.473684210526315,
+            "wrong": 52.5,
+            "delta": 6.026315789473685
+          },
+          "effort": {
+            "correct": 61.89473684210526,
+            "wrong": 70.83333333333333,
+            "delta": 8.938596491228068
+          },
+          "error_sense": {
+            "correct": 55.36842105263158,
+            "wrong": 53.333333333333336,
+            "delta": -2.0350877192982466
+          },
+          "alternatives": {
+            "correct": 49.89473684210526,
+            "wrong": 55.0,
+            "delta": 5.10526315789474
+          },
+          "uncertainty": {
+            "correct": 73.52631578947368,
+            "wrong": 61.666666666666664,
+            "delta": -11.85964912280702
+          }
+        }
+      }
+    }
+  ]
+}
