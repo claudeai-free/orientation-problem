@@ -1,0 +1,1985 @@
+{
+  "model": "llama3.2",
+  "date": "2026-04-09T23:22:41.595254",
+  "version": "within_question_v0.1",
+  "n_questions": 13,
+  "n_samples_per_question": 20,
+  "temperature": 1.0,
+  "method": "Same question, high temperature, compare speed on correct vs wrong draws",
+  "results": [
+    {
+      "question": "What is 17 × 23? Answer with ONLY the number.",
+      "correct_answer": "391",
+      "category": "math",
+      "n_correct": 18,
+      "n_wrong": 2,
+      "avg_eval_ms_correct": 24.311416722222223,
+      "avg_eval_ms_wrong": 24.721021,
+      "delta_eval_ms": 0.4096042777777775,
+      "avg_tps_correct": 82.48333333333333,
+      "avg_tps_wrong": 80.9,
+      "delta_tps": -1.5833333333333286,
+      "usable": true,
+      "samples": [
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 25.025708,
+          "tokens_per_sec": 79.9,
+          "eval_count": 2
+        },
+        {
+          "response": "394",
+          "is_correct": false,
+          "eval_ms": 24.261083,
+          "tokens_per_sec": 82.4,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 23.68875,
+          "tokens_per_sec": 84.4,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 24.7565,
+          "tokens_per_sec": 80.8,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 27.36375,
+          "tokens_per_sec": 73.1,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 25.015167,
+          "tokens_per_sec": 80.0,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 25.173833,
+          "tokens_per_sec": 79.4,
+          "eval_count": 2
+        },
+        {
+          "response": "395",
+          "is_correct": false,
+          "eval_ms": 25.180959,
+          "tokens_per_sec": 79.4,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 24.925667,
+          "tokens_per_sec": 80.2,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 22.416417,
+          "tokens_per_sec": 89.2,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 24.615125,
+          "tokens_per_sec": 81.3,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 23.601917,
+          "tokens_per_sec": 84.7,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 23.373792,
+          "tokens_per_sec": 85.6,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 25.276,
+          "tokens_per_sec": 79.1,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 23.230875,
+          "tokens_per_sec": 86.1,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 23.598167,
+          "tokens_per_sec": 84.8,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 22.808625,
+          "tokens_per_sec": 87.7,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 22.16425,
+          "tokens_per_sec": 90.2,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 25.049333,
+          "tokens_per_sec": 79.8,
+          "eval_count": 2
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 25.521625,
+          "tokens_per_sec": 78.4,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "What is 23 × 19? Answer with ONLY the number.",
+      "correct_answer": "437",
+      "category": "math",
+      "n_correct": 0,
+      "n_wrong": 20,
+      "usable": false,
+      "samples": [
+        {
+          "response": "443",
+          "is_correct": false,
+          "eval_ms": 23.684959,
+          "tokens_per_sec": 84.4,
+          "eval_count": 2
+        },
+        {
+          "response": "442",
+          "is_correct": false,
+          "eval_ms": 23.650125,
+          "tokens_per_sec": 84.6,
+          "eval_count": 2
+        },
+        {
+          "response": "446",
+          "is_correct": false,
+          "eval_ms": 23.915167,
+          "tokens_per_sec": 83.6,
+          "eval_count": 2
+        },
+        {
+          "response": "442",
+          "is_correct": false,
+          "eval_ms": 22.032375,
+          "tokens_per_sec": 90.8,
+          "eval_count": 2
+        },
+        {
+          "response": "443",
+          "is_correct": false,
+          "eval_ms": 23.374917,
+          "tokens_per_sec": 85.6,
+          "eval_count": 2
+        },
+        {
+          "response": "445",
+          "is_correct": false,
+          "eval_ms": 25.080667,
+          "tokens_per_sec": 79.7,
+          "eval_count": 2
+        },
+        {
+          "response": "447",
+          "is_correct": false,
+          "eval_ms": 25.664583,
+          "tokens_per_sec": 77.9,
+          "eval_count": 2
+        },
+        {
+          "response": "445",
+          "is_correct": false,
+          "eval_ms": 23.345542,
+          "tokens_per_sec": 85.7,
+          "eval_count": 2
+        },
+        {
+          "response": "443",
+          "is_correct": false,
+          "eval_ms": 23.261208,
+          "tokens_per_sec": 86.0,
+          "eval_count": 2
+        },
+        {
+          "response": "443",
+          "is_correct": false,
+          "eval_ms": 24.791083,
+          "tokens_per_sec": 80.7,
+          "eval_count": 2
+        },
+        {
+          "response": "442",
+          "is_correct": false,
+          "eval_ms": 25.614208,
+          "tokens_per_sec": 78.1,
+          "eval_count": 2
+        },
+        {
+          "response": "445",
+          "is_correct": false,
+          "eval_ms": 22.304458,
+          "tokens_per_sec": 89.7,
+          "eval_count": 2
+        },
+        {
+          "response": "442",
+          "is_correct": false,
+          "eval_ms": 21.798417,
+          "tokens_per_sec": 91.7,
+          "eval_count": 2
+        },
+        {
+          "response": "447",
+          "is_correct": false,
+          "eval_ms": 23.804708,
+          "tokens_per_sec": 84.0,
+          "eval_count": 2
+        },
+        {
+          "response": "445",
+          "is_correct": false,
+          "eval_ms": 25.436042,
+          "tokens_per_sec": 78.6,
+          "eval_count": 2
+        },
+        {
+          "response": "443",
+          "is_correct": false,
+          "eval_ms": 23.877458,
+          "tokens_per_sec": 83.8,
+          "eval_count": 2
+        },
+        {
+          "response": "443",
+          "is_correct": false,
+          "eval_ms": 24.816125,
+          "tokens_per_sec": 80.6,
+          "eval_count": 2
+        },
+        {
+          "response": "443",
+          "is_correct": false,
+          "eval_ms": 23.803292,
+          "tokens_per_sec": 84.0,
+          "eval_count": 2
+        },
+        {
+          "response": "445",
+          "is_correct": false,
+          "eval_ms": 25.56125,
+          "tokens_per_sec": 78.2,
+          "eval_count": 2
+        },
+        {
+          "response": "445",
+          "is_correct": false,
+          "eval_ms": 21.446875,
+          "tokens_per_sec": 93.3,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "What is 13 × 17? Answer with ONLY the number.",
+      "correct_answer": "221",
+      "category": "math",
+      "n_correct": 20,
+      "n_wrong": 0,
+      "usable": false,
+      "samples": [
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 22.945875,
+          "tokens_per_sec": 87.2,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 23.40175,
+          "tokens_per_sec": 85.5,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 23.813375,
+          "tokens_per_sec": 84.0,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 23.036916,
+          "tokens_per_sec": 86.8,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 25.699167,
+          "tokens_per_sec": 77.8,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 24.199,
+          "tokens_per_sec": 82.6,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 25.131958,
+          "tokens_per_sec": 79.6,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 21.966916,
+          "tokens_per_sec": 91.0,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 23.087958,
+          "tokens_per_sec": 86.6,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 23.2495,
+          "tokens_per_sec": 86.0,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 24.046833,
+          "tokens_per_sec": 83.2,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 24.9685,
+          "tokens_per_sec": 80.1,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 24.355792,
+          "tokens_per_sec": 82.1,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 23.942791,
+          "tokens_per_sec": 83.5,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 25.034125,
+          "tokens_per_sec": 79.9,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 21.876291,
+          "tokens_per_sec": 91.4,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 23.518,
+          "tokens_per_sec": 85.0,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 24.777291,
+          "tokens_per_sec": 80.7,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 25.896417,
+          "tokens_per_sec": 77.2,
+          "eval_count": 2
+        },
+        {
+          "response": "221",
+          "is_correct": true,
+          "eval_ms": 24.711875,
+          "tokens_per_sec": 80.9,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "What is 19 × 14? Answer with ONLY the number.",
+      "correct_answer": "266",
+      "category": "math",
+      "n_correct": 20,
+      "n_wrong": 0,
+      "usable": false,
+      "samples": [
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 24.636375,
+          "tokens_per_sec": 81.2,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 21.792375,
+          "tokens_per_sec": 91.8,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 22.201792,
+          "tokens_per_sec": 90.1,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 23.593417,
+          "tokens_per_sec": 84.8,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 25.685,
+          "tokens_per_sec": 77.9,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 23.538292,
+          "tokens_per_sec": 85.0,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 23.547458,
+          "tokens_per_sec": 84.9,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 22.812875,
+          "tokens_per_sec": 87.7,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 24.481083,
+          "tokens_per_sec": 81.7,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 22.502584,
+          "tokens_per_sec": 88.9,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 23.093833,
+          "tokens_per_sec": 86.6,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 25.343125,
+          "tokens_per_sec": 78.9,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 24.887791,
+          "tokens_per_sec": 80.4,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 23.887042,
+          "tokens_per_sec": 83.7,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 28.263292,
+          "tokens_per_sec": 70.8,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 24.0715,
+          "tokens_per_sec": 83.1,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 26.478542,
+          "tokens_per_sec": 75.5,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 22.546625,
+          "tokens_per_sec": 88.7,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 22.783042,
+          "tokens_per_sec": 87.8,
+          "eval_count": 2
+        },
+        {
+          "response": "266",
+          "is_correct": true,
+          "eval_ms": 23.307792,
+          "tokens_per_sec": 85.8,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "What is the remainder when 100 is divided by 7? ONLY the number.",
+      "correct_answer": "2",
+      "category": "math",
+      "n_correct": 2,
+      "n_wrong": 18,
+      "avg_eval_ms_correct": 23.5100415,
+      "avg_eval_ms_wrong": 24.02473611111111,
+      "delta_eval_ms": 0.5146946111111106,
+      "avg_tps_correct": 85.1,
+      "avg_tps_wrong": 83.48333333333333,
+      "delta_tps": -1.61666666666666,
+      "usable": true,
+      "samples": [
+        {
+          "response": "5",
+          "is_correct": false,
+          "eval_ms": 23.881291,
+          "tokens_per_sec": 83.7,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": true,
+          "eval_ms": 23.893333,
+          "tokens_per_sec": 83.7,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": false,
+          "eval_ms": 25.64425,
+          "tokens_per_sec": 78.0,
+          "eval_count": 2
+        },
+        {
+          "response": "5",
+          "is_correct": false,
+          "eval_ms": 23.020333,
+          "tokens_per_sec": 86.9,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": false,
+          "eval_ms": 25.286083,
+          "tokens_per_sec": 79.1,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": false,
+          "eval_ms": 22.166166,
+          "tokens_per_sec": 90.2,
+          "eval_count": 2
+        },
+        {
+          "response": "5",
+          "is_correct": false,
+          "eval_ms": 22.206584,
+          "tokens_per_sec": 90.1,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": false,
+          "eval_ms": 25.305584,
+          "tokens_per_sec": 79.0,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": false,
+          "eval_ms": 26.150833,
+          "tokens_per_sec": 76.5,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": false,
+          "eval_ms": 24.014583,
+          "tokens_per_sec": 83.3,
+          "eval_count": 2
+        },
+        {
+          "response": "5",
+          "is_correct": false,
+          "eval_ms": 23.705,
+          "tokens_per_sec": 84.4,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": false,
+          "eval_ms": 24.949834,
+          "tokens_per_sec": 80.2,
+          "eval_count": 2
+        },
+        {
+          "response": "5",
+          "is_correct": false,
+          "eval_ms": 24.25875,
+          "tokens_per_sec": 82.4,
+          "eval_count": 2
+        },
+        {
+          "response": "5",
+          "is_correct": false,
+          "eval_ms": 22.111,
+          "tokens_per_sec": 90.5,
+          "eval_count": 2
+        },
+        {
+          "response": "5",
+          "is_correct": false,
+          "eval_ms": 22.693667,
+          "tokens_per_sec": 88.1,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": true,
+          "eval_ms": 23.12675,
+          "tokens_per_sec": 86.5,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": false,
+          "eval_ms": 23.455292,
+          "tokens_per_sec": 85.3,
+          "eval_count": 2
+        },
+        {
+          "response": "5",
+          "is_correct": false,
+          "eval_ms": 26.058958,
+          "tokens_per_sec": 76.7,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": false,
+          "eval_ms": 23.90025,
+          "tokens_per_sec": 83.7,
+          "eval_count": 2
+        },
+        {
+          "response": "5",
+          "is_correct": false,
+          "eval_ms": 23.636792,
+          "tokens_per_sec": 84.6,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "What is the remainder when 97 is divided by 11? ONLY the number.",
+      "correct_answer": "9",
+      "category": "math",
+      "n_correct": 0,
+      "n_wrong": 20,
+      "usable": false,
+      "samples": [
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 24.083041,
+          "tokens_per_sec": 83.0,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 22.581625,
+          "tokens_per_sec": 88.6,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 22.837,
+          "tokens_per_sec": 87.6,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 24.736375,
+          "tokens_per_sec": 80.9,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 24.129917,
+          "tokens_per_sec": 82.9,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 25.035917,
+          "tokens_per_sec": 79.9,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 23.426167,
+          "tokens_per_sec": 85.4,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 23.085333,
+          "tokens_per_sec": 86.6,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 24.539084,
+          "tokens_per_sec": 81.5,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 22.154334,
+          "tokens_per_sec": 90.3,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 22.645917,
+          "tokens_per_sec": 88.3,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 24.195292,
+          "tokens_per_sec": 82.7,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 25.384583,
+          "tokens_per_sec": 78.8,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 23.424083,
+          "tokens_per_sec": 85.4,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 25.093084,
+          "tokens_per_sec": 79.7,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 23.719916,
+          "tokens_per_sec": 84.3,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 23.40425,
+          "tokens_per_sec": 85.5,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 22.615792,
+          "tokens_per_sec": 88.4,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 23.073042,
+          "tokens_per_sec": 86.7,
+          "eval_count": 2
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 24.180583,
+          "tokens_per_sec": 82.7,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "How many r's in 'strawberry'? ONLY the number.",
+      "correct_answer": "3",
+      "category": "string",
+      "n_correct": 0,
+      "n_wrong": 20,
+      "usable": false,
+      "samples": [
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 25.848334,
+          "tokens_per_sec": 77.4,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.973625,
+          "tokens_per_sec": 83.4,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 26.659959,
+          "tokens_per_sec": 75.0,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.412458,
+          "tokens_per_sec": 85.4,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 25.315291,
+          "tokens_per_sec": 79.0,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 21.72725,
+          "tokens_per_sec": 92.1,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 22.654125,
+          "tokens_per_sec": 88.3,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.959417,
+          "tokens_per_sec": 83.5,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 24.508875,
+          "tokens_per_sec": 81.6,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.686791,
+          "tokens_per_sec": 84.4,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 22.777833,
+          "tokens_per_sec": 87.8,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 22.980667,
+          "tokens_per_sec": 87.0,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 25.759417,
+          "tokens_per_sec": 77.6,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 22.87075,
+          "tokens_per_sec": 87.4,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 22.409625,
+          "tokens_per_sec": 89.2,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.656541,
+          "tokens_per_sec": 84.5,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 24.7375,
+          "tokens_per_sec": 80.8,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.937125,
+          "tokens_per_sec": 83.6,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 22.891584,
+          "tokens_per_sec": 87.4,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.022,
+          "tokens_per_sec": 86.9,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "How many e's in 'excellence'? ONLY the number.",
+      "correct_answer": "4",
+      "category": "string",
+      "n_correct": 4,
+      "n_wrong": 16,
+      "avg_eval_ms_correct": 23.50731225,
+      "avg_eval_ms_wrong": 23.586940124999998,
+      "delta_eval_ms": 0.0796278749999999,
+      "avg_tps_correct": 85.15,
+      "avg_tps_wrong": 84.95,
+      "delta_tps": -0.20000000000000284,
+      "usable": true,
+      "samples": [
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 24.860084,
+          "tokens_per_sec": 80.5,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 22.218208,
+          "tokens_per_sec": 90.0,
+          "eval_count": 2
+        },
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 22.332375,
+          "tokens_per_sec": 89.6,
+          "eval_count": 2
+        },
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 24.751083,
+          "tokens_per_sec": 80.8,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 24.669417,
+          "tokens_per_sec": 81.1,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 23.60125,
+          "tokens_per_sec": 84.7,
+          "eval_count": 2
+        },
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 24.661042,
+          "tokens_per_sec": 81.1,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.35825,
+          "tokens_per_sec": 85.6,
+          "eval_count": 2
+        },
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 24.690917,
+          "tokens_per_sec": 81.0,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 22.6265,
+          "tokens_per_sec": 88.4,
+          "eval_count": 2
+        },
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 22.203,
+          "tokens_per_sec": 90.1,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 24.64525,
+          "tokens_per_sec": 81.2,
+          "eval_count": 2
+        },
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 23.637292,
+          "tokens_per_sec": 84.6,
+          "eval_count": 2
+        },
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 23.339125,
+          "tokens_per_sec": 85.7,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 23.280291,
+          "tokens_per_sec": 85.9,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 24.521208,
+          "tokens_per_sec": 81.6,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.281,
+          "tokens_per_sec": 85.9,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.305291,
+          "tokens_per_sec": 85.8,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 22.0565,
+          "tokens_per_sec": 90.7,
+          "eval_count": 2
+        },
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 23.382208,
+          "tokens_per_sec": 85.5,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "How many p's in 'pepper'? ONLY the number.",
+      "correct_answer": "3",
+      "category": "string",
+      "n_correct": 0,
+      "n_wrong": 20,
+      "usable": false,
+      "samples": [
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 24.405916,
+          "tokens_per_sec": 81.9,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.24175,
+          "tokens_per_sec": 86.1,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 26.1345,
+          "tokens_per_sec": 76.5,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 24.395458,
+          "tokens_per_sec": 82.0,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.440667,
+          "tokens_per_sec": 85.3,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 21.828584,
+          "tokens_per_sec": 91.6,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 21.642375,
+          "tokens_per_sec": 92.4,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.105041,
+          "tokens_per_sec": 86.6,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.017083,
+          "tokens_per_sec": 86.9,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.461583,
+          "tokens_per_sec": 85.2,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 24.567958,
+          "tokens_per_sec": 81.4,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.231208,
+          "tokens_per_sec": 86.1,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.128041,
+          "tokens_per_sec": 86.5,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.187083,
+          "tokens_per_sec": 86.3,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 21.909041,
+          "tokens_per_sec": 91.3,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.572375,
+          "tokens_per_sec": 84.8,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 26.638333,
+          "tokens_per_sec": 75.1,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.452125,
+          "tokens_per_sec": 85.3,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 24.314834,
+          "tokens_per_sec": 82.3,
+          "eval_count": 2
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 23.171417,
+          "tokens_per_sec": 86.3,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "How many s's in 'mississippi'? ONLY the number.",
+      "correct_answer": "4",
+      "category": "string",
+      "n_correct": 20,
+      "n_wrong": 0,
+      "usable": false,
+      "samples": [
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 23.724959,
+          "tokens_per_sec": 84.3,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 22.026458,
+          "tokens_per_sec": 90.8,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 24.441584,
+          "tokens_per_sec": 81.8,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 25.52325,
+          "tokens_per_sec": 78.4,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 26.027708,
+          "tokens_per_sec": 76.8,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 24.010459,
+          "tokens_per_sec": 83.3,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 25.133959,
+          "tokens_per_sec": 79.6,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 22.85625,
+          "tokens_per_sec": 87.5,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 24.642875,
+          "tokens_per_sec": 81.2,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 23.061416,
+          "tokens_per_sec": 86.7,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 22.085084,
+          "tokens_per_sec": 90.6,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 22.940167,
+          "tokens_per_sec": 87.2,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 25.031375,
+          "tokens_per_sec": 79.9,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 25.199,
+          "tokens_per_sec": 79.4,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 23.442917,
+          "tokens_per_sec": 85.3,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 22.875209,
+          "tokens_per_sec": 87.4,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 25.414916,
+          "tokens_per_sec": 78.7,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 23.710958,
+          "tokens_per_sec": 84.3,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 22.537,
+          "tokens_per_sec": 88.7,
+          "eval_count": 2
+        },
+        {
+          "response": "4",
+          "is_correct": true,
+          "eval_ms": 24.005917,
+          "tokens_per_sec": 83.3,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "Is 91 prime? Answer ONLY yes or no.",
+      "correct_answer": "no",
+      "category": "logic",
+      "n_correct": 19,
+      "n_wrong": 1,
+      "usable": false,
+      "samples": [
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 47.588208,
+          "tokens_per_sec": 63.0,
+          "eval_count": 3
+        },
+        {
+          "response": "No",
+          "is_correct": true,
+          "eval_ms": 23.673584,
+          "tokens_per_sec": 84.5,
+          "eval_count": 2
+        },
+        {
+          "response": "No",
+          "is_correct": true,
+          "eval_ms": 23.908334,
+          "tokens_per_sec": 83.7,
+          "eval_count": 2
+        },
+        {
+          "response": "No",
+          "is_correct": true,
+          "eval_ms": 25.040584,
+          "tokens_per_sec": 79.9,
+          "eval_count": 2
+        },
+        {
+          "response": "No",
+          "is_correct": true,
+          "eval_ms": 25.304459,
+          "tokens_per_sec": 79.0,
+          "eval_count": 2
+        },
+        {
+          "response": "No",
+          "is_correct": true,
+          "eval_ms": 22.657333,
+          "tokens_per_sec": 88.3,
+          "eval_count": 2
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 44.70675,
+          "tokens_per_sec": 67.1,
+          "eval_count": 3
+        },
+        {
+          "response": "No",
+          "is_correct": true,
+          "eval_ms": 25.118083,
+          "tokens_per_sec": 79.6,
+          "eval_count": 2
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 47.085209,
+          "tokens_per_sec": 63.7,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 49.783624,
+          "tokens_per_sec": 60.3,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 48.459708,
+          "tokens_per_sec": 61.9,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 49.767124,
+          "tokens_per_sec": 60.3,
+          "eval_count": 3
+        },
+        {
+          "response": "Yes.",
+          "is_correct": false,
+          "eval_ms": 45.489417,
+          "tokens_per_sec": 65.9,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 45.813375,
+          "tokens_per_sec": 65.5,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 49.214126,
+          "tokens_per_sec": 61.0,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 50.564875,
+          "tokens_per_sec": 59.3,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 47.158959,
+          "tokens_per_sec": 63.6,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 47.53725,
+          "tokens_per_sec": 63.1,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 47.396208,
+          "tokens_per_sec": 63.3,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": true,
+          "eval_ms": 44.366292,
+          "tokens_per_sec": 67.6,
+          "eval_count": 3
+        }
+      ]
+    },
+    {
+      "question": "Is 97 prime? Answer ONLY yes or no.",
+      "correct_answer": "yes",
+      "category": "logic",
+      "n_correct": 11,
+      "n_wrong": 9,
+      "avg_eval_ms_correct": 47.06913645454546,
+      "avg_eval_ms_wrong": 27.147824,
+      "delta_eval_ms": -19.921312454545458,
+      "avg_tps_correct": 63.845454545454544,
+      "avg_tps_wrong": 79.77777777777777,
+      "delta_tps": 15.932323232323228,
+      "usable": true,
+      "samples": [
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 49.583376,
+          "tokens_per_sec": 60.5,
+          "eval_count": 3
+        },
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 23.527625,
+          "tokens_per_sec": 85.0,
+          "eval_count": 2
+        },
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 49.01625,
+          "tokens_per_sec": 61.2,
+          "eval_count": 3
+        },
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 48.34125,
+          "tokens_per_sec": 62.1,
+          "eval_count": 3
+        },
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 23.728208,
+          "tokens_per_sec": 84.3,
+          "eval_count": 2
+        },
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 48.405043,
+          "tokens_per_sec": 62.0,
+          "eval_count": 3
+        },
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 44.809041,
+          "tokens_per_sec": 67.0,
+          "eval_count": 3
+        },
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 44.586458,
+          "tokens_per_sec": 67.3,
+          "eval_count": 3
+        },
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 26.086042,
+          "tokens_per_sec": 76.7,
+          "eval_count": 2
+        },
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 24.973208,
+          "tokens_per_sec": 80.1,
+          "eval_count": 2
+        },
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 48.023792,
+          "tokens_per_sec": 62.5,
+          "eval_count": 3
+        },
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 46.822416,
+          "tokens_per_sec": 64.1,
+          "eval_count": 3
+        },
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 47.593667,
+          "tokens_per_sec": 63.0,
+          "eval_count": 3
+        },
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 21.689333,
+          "tokens_per_sec": 92.2,
+          "eval_count": 2
+        },
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 43.947792,
+          "tokens_per_sec": 68.3,
+          "eval_count": 3
+        },
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 27.3885,
+          "tokens_per_sec": 73.0,
+          "eval_count": 2
+        },
+        {
+          "response": "Yes.",
+          "is_correct": true,
+          "eval_ms": 46.631416,
+          "tokens_per_sec": 64.3,
+          "eval_count": 3
+        },
+        {
+          "response": "No.",
+          "is_correct": false,
+          "eval_ms": 48.365541,
+          "tokens_per_sec": 62.0,
+          "eval_count": 3
+        },
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 24.68775,
+          "tokens_per_sec": 81.0,
+          "eval_count": 2
+        },
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 23.884209,
+          "tokens_per_sec": 83.7,
+          "eval_count": 2
+        }
+      ]
+    },
+    {
+      "question": "A bat and ball cost $1.10. The bat costs $1 more than the ball. Ball cost in cents? ONLY the number.",
+      "correct_answer": "5",
+      "category": "logic",
+      "n_correct": 1,
+      "n_wrong": 19,
+      "usable": false,
+      "samples": [
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 22.050917,
+          "tokens_per_sec": 90.7,
+          "eval_count": 2
+        },
+        {
+          "response": "$0.05",
+          "is_correct": true,
+          "eval_ms": 89.504125,
+          "tokens_per_sec": 55.9,
+          "eval_count": 5
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 27.0295,
+          "tokens_per_sec": 74.0,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 24.228791,
+          "tokens_per_sec": 82.5,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 24.557083,
+          "tokens_per_sec": 81.4,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 24.3625,
+          "tokens_per_sec": 82.1,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 23.386625,
+          "tokens_per_sec": 85.5,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 24.36475,
+          "tokens_per_sec": 82.1,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 22.028459,
+          "tokens_per_sec": 90.8,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 21.668042,
+          "tokens_per_sec": 92.3,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 24.176709,
+          "tokens_per_sec": 82.7,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 27.711083,
+          "tokens_per_sec": 72.2,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 24.098667,
+          "tokens_per_sec": 83.0,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 24.508916,
+          "tokens_per_sec": 81.6,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 29.889959,
+          "tokens_per_sec": 66.9,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 24.568417,
+          "tokens_per_sec": 81.4,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 24.888708,
+          "tokens_per_sec": 80.4,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 25.247959,
+          "tokens_per_sec": 79.2,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 23.77875,
+          "tokens_per_sec": 84.1,
+          "eval_count": 2
+        },
+        {
+          "response": "110",
+          "is_correct": false,
+          "eval_ms": 24.191542,
+          "tokens_per_sec": 82.7,
+          "eval_count": 2
+        }
+      ]
+    }
+  ]
+}

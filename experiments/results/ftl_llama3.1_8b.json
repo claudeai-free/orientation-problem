@@ -1,0 +1,1390 @@
+{
+  "model": "llama3.1:8b",
+  "date": "2026-04-09T23:19:39.821423",
+  "version": "first_token_latency_v0.1",
+  "n_tasks": 30,
+  "n_repeats": 3,
+  "method": "num_predict=1, temperature=0, 3 repeats per task",
+  "results": [
+    {
+      "task_index": 0,
+      "question": "What is 7 × 8? Answer with ONLY the number, nothing else.",
+      "correct_answer": "56",
+      "model_answer": "56",
+      "is_correct": true,
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "eval_ms_mean": 368.01152766666667,
+      "eval_ms_std": 334.3717361087244,
+      "eval_ms_all": [
+        166.803791,
+        183.236625,
+        753.994167
+      ],
+      "prompt_eval_ms": 917.217417,
+      "trials": [
+        {
+          "response": "56",
+          "is_correct": true,
+          "eval_ms": 166.803791,
+          "prompt_eval_ms": 917.217417,
+          "load_ms": 411.198667,
+          "total_ms": 1495.219875,
+          "eval_count": 1
+        },
+        {
+          "response": "56",
+          "is_correct": true,
+          "eval_ms": 183.236625,
+          "prompt_eval_ms": 292.164917,
+          "load_ms": 730.850833,
+          "total_ms": 1206.252375,
+          "eval_count": 1
+        },
+        {
+          "response": "56",
+          "is_correct": true,
+          "eval_ms": 753.994167,
+          "prompt_eval_ms": 303.664875,
+          "load_ms": 966.162875,
+          "total_ms": 2023.821917,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 1,
+      "question": "What is 12 × 9? Answer with ONLY the number, nothing else.",
+      "correct_answer": "108",
+      "model_answer": "108",
+      "is_correct": true,
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "eval_ms_mean": 329.1912776666667,
+      "eval_ms_std": 402.3210820864165,
+      "eval_ms_all": [
+        135.0415,
+        60.76425,
+        791.768083
+      ],
+      "prompt_eval_ms": 734.545792,
+      "trials": [
+        {
+          "response": "108",
+          "is_correct": true,
+          "eval_ms": 135.0415,
+          "prompt_eval_ms": 734.545792,
+          "load_ms": 244.881416,
+          "total_ms": 1114.468708,
+          "eval_count": 1
+        },
+        {
+          "response": "108",
+          "is_correct": true,
+          "eval_ms": 60.76425,
+          "prompt_eval_ms": 291.042917,
+          "load_ms": 248.778208,
+          "total_ms": 600.585375,
+          "eval_count": 1
+        },
+        {
+          "response": "108",
+          "is_correct": true,
+          "eval_ms": 791.768083,
+          "prompt_eval_ms": 1080.0125,
+          "load_ms": 432.887542,
+          "total_ms": 2304.668125,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 2,
+      "question": "What is 2^10? Answer with ONLY the number, nothing else.",
+      "correct_answer": "1024",
+      "model_answer": "102",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "easy",
+      "eval_ms_mean": 104.144861,
+      "eval_ms_std": 56.162288590645616,
+      "eval_ms_all": [
+        165.242208,
+        54.767,
+        92.425375
+      ],
+      "prompt_eval_ms": 557.506375,
+      "trials": [
+        {
+          "response": "102",
+          "is_correct": true,
+          "eval_ms": 165.242208,
+          "prompt_eval_ms": 557.506375,
+          "load_ms": 338.441042,
+          "total_ms": 1061.189625,
+          "eval_count": 1
+        },
+        {
+          "response": "102",
+          "is_correct": true,
+          "eval_ms": 54.767,
+          "prompt_eval_ms": 102.641291,
+          "load_ms": 174.733417,
+          "total_ms": 332.141708,
+          "eval_count": 1
+        },
+        {
+          "response": "102",
+          "is_correct": true,
+          "eval_ms": 92.425375,
+          "prompt_eval_ms": 92.6085,
+          "load_ms": 159.74375,
+          "total_ms": 344.777625,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 3,
+      "question": "What is 15 × 17? Answer with ONLY the number, nothing else.",
+      "correct_answer": "255",
+      "model_answer": "255",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "eval_ms_mean": 135.59879166666667,
+      "eval_ms_std": 77.02236617457432,
+      "eval_ms_all": [
+        105.454,
+        78.208,
+        223.134375
+      ],
+      "prompt_eval_ms": 405.505708,
+      "trials": [
+        {
+          "response": "255",
+          "is_correct": true,
+          "eval_ms": 105.454,
+          "prompt_eval_ms": 405.505708,
+          "load_ms": 228.866375,
+          "total_ms": 739.826083,
+          "eval_count": 1
+        },
+        {
+          "response": "255",
+          "is_correct": true,
+          "eval_ms": 78.208,
+          "prompt_eval_ms": 314.761417,
+          "load_ms": 254.052583,
+          "total_ms": 647.022,
+          "eval_count": 1
+        },
+        {
+          "response": "255",
+          "is_correct": true,
+          "eval_ms": 223.134375,
+          "prompt_eval_ms": 751.90375,
+          "load_ms": 215.120625,
+          "total_ms": 1190.15875,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 4,
+      "question": "What is 23 × 19? Answer with ONLY the number, nothing else.",
+      "correct_answer": "437",
+      "model_answer": "437",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "eval_ms_mean": 316.265764,
+      "eval_ms_std": 175.85159770299933,
+      "eval_ms_all": [
+        127.130167,
+        346.844666,
+        474.822459
+      ],
+      "prompt_eval_ms": 396.309708,
+      "trials": [
+        {
+          "response": "437",
+          "is_correct": true,
+          "eval_ms": 127.130167,
+          "prompt_eval_ms": 396.309708,
+          "load_ms": 514.209625,
+          "total_ms": 1037.6495,
+          "eval_count": 1
+        },
+        {
+          "response": "437",
+          "is_correct": true,
+          "eval_ms": 346.844666,
+          "prompt_eval_ms": 1226.032334,
+          "load_ms": 642.362208,
+          "total_ms": 2215.239208,
+          "eval_count": 1
+        },
+        {
+          "response": "437",
+          "is_correct": true,
+          "eval_ms": 474.822459,
+          "prompt_eval_ms": 418.898375,
+          "load_ms": 3714.88275,
+          "total_ms": 4608.603584,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 5,
+      "question": "What is 17 × 23? Answer with ONLY the number, nothing else.",
+      "correct_answer": "391",
+      "model_answer": "391",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "eval_ms_mean": 185.47006933333333,
+      "eval_ms_std": 103.16316279204514,
+      "eval_ms_all": [
+        158.917624,
+        299.314,
+        98.178584
+      ],
+      "prompt_eval_ms": 735.837417,
+      "trials": [
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 158.917624,
+          "prompt_eval_ms": 735.837417,
+          "load_ms": 655.628542,
+          "total_ms": 1550.383583,
+          "eval_count": 1
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 299.314,
+          "prompt_eval_ms": 4132.3485,
+          "load_ms": 481.686417,
+          "total_ms": 4913.348917,
+          "eval_count": 1
+        },
+        {
+          "response": "391",
+          "is_correct": true,
+          "eval_ms": 98.178584,
+          "prompt_eval_ms": 198.735166,
+          "load_ms": 518.728666,
+          "total_ms": 815.642416,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 6,
+      "question": "What is the remainder when 1000 is divided by 7? ONLY the number.",
+      "correct_answer": "6",
+      "model_answer": "6",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "eval_ms_mean": 85.39593066666666,
+      "eval_ms_std": 73.37718591846803,
+      "eval_ms_all": [
+        169.810792,
+        36.878999,
+        49.498001
+      ],
+      "prompt_eval_ms": 3031.759166,
+      "trials": [
+        {
+          "response": "6",
+          "is_correct": true,
+          "eval_ms": 169.810792,
+          "prompt_eval_ms": 3031.759166,
+          "load_ms": 172.473333,
+          "total_ms": 3374.043291,
+          "eval_count": 1
+        },
+        {
+          "response": "6",
+          "is_correct": true,
+          "eval_ms": 36.878999,
+          "prompt_eval_ms": 172.097084,
+          "load_ms": 247.1945,
+          "total_ms": 456.170583,
+          "eval_count": 1
+        },
+        {
+          "response": "6",
+          "is_correct": true,
+          "eval_ms": 49.498001,
+          "prompt_eval_ms": 172.251708,
+          "load_ms": 161.243458,
+          "total_ms": 382.993167,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 7,
+      "question": "What is the remainder when 997 is divided by 13? ONLY the number.",
+      "correct_answer": "9",
+      "model_answer": "8",
+      "is_correct": false,
+      "category": "math",
+      "difficulty": "medium",
+      "eval_ms_mean": 182.74830533333335,
+      "eval_ms_std": 148.14761984721923,
+      "eval_ms_all": [
+        351.761666,
+        121.1235,
+        75.35975
+      ],
+      "prompt_eval_ms": 378.657959,
+      "trials": [
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 351.761666,
+          "prompt_eval_ms": 378.657959,
+          "load_ms": 220.457125,
+          "total_ms": 950.87675,
+          "eval_count": 1
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 121.1235,
+          "prompt_eval_ms": 1439.226417,
+          "load_ms": 659.417875,
+          "total_ms": 2219.767792,
+          "eval_count": 1
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 75.35975,
+          "prompt_eval_ms": 394.216542,
+          "load_ms": 251.423416,
+          "total_ms": 720.999708,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 8,
+      "question": "What is 2^8? Answer with ONLY the number.",
+      "correct_answer": "256",
+      "model_answer": "256",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "easy",
+      "eval_ms_mean": 100.90715266666668,
+      "eval_ms_std": 107.05742882486005,
+      "eval_ms_all": [
+        216.568916,
+        80.865958,
+        5.286584
+      ],
+      "prompt_eval_ms": 1602.893792,
+      "trials": [
+        {
+          "response": "256",
+          "is_correct": true,
+          "eval_ms": 216.568916,
+          "prompt_eval_ms": 1602.893792,
+          "load_ms": 995.231875,
+          "total_ms": 2814.694583,
+          "eval_count": 1
+        },
+        {
+          "response": "256",
+          "is_correct": true,
+          "eval_ms": 80.865958,
+          "prompt_eval_ms": 115.804708,
+          "load_ms": 628.445,
+          "total_ms": 825.115666,
+          "eval_count": 1
+        },
+        {
+          "response": "256",
+          "is_correct": true,
+          "eval_ms": 5.286584,
+          "prompt_eval_ms": 59.070458,
+          "load_ms": 236.73925,
+          "total_ms": 301.096292,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 9,
+      "question": "What is the square root of 169? ONLY the number.",
+      "correct_answer": "13",
+      "model_answer": "13",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "easy",
+      "eval_ms_mean": 23.45326433333333,
+      "eval_ms_std": 36.54322428758062,
+      "eval_ms_all": [
+        65.643459,
+        2.988918,
+        1.727416
+      ],
+      "prompt_eval_ms": 237.48375,
+      "trials": [
+        {
+          "response": "13",
+          "is_correct": true,
+          "eval_ms": 65.643459,
+          "prompt_eval_ms": 237.48375,
+          "load_ms": 137.127083,
+          "total_ms": 440.254292,
+          "eval_count": 1
+        },
+        {
+          "response": "13",
+          "is_correct": true,
+          "eval_ms": 2.988918,
+          "prompt_eval_ms": 70.328416,
+          "load_ms": 109.833458,
+          "total_ms": 183.150792,
+          "eval_count": 1
+        },
+        {
+          "response": "13",
+          "is_correct": true,
+          "eval_ms": 1.727416,
+          "prompt_eval_ms": 66.942959,
+          "load_ms": 169.059792,
+          "total_ms": 237.730167,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 10,
+      "question": "How many r's in 'strawberry'? ONLY the number.",
+      "correct_answer": "3",
+      "model_answer": "3",
+      "is_correct": true,
+      "category": "string",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 15.221833,
+      "eval_ms_std": 24.275417748020093,
+      "eval_ms_all": [
+        43.252666,
+        1.220833,
+        1.192
+      ],
+      "prompt_eval_ms": 196.813209,
+      "trials": [
+        {
+          "response": "3",
+          "is_correct": true,
+          "eval_ms": 43.252666,
+          "prompt_eval_ms": 196.813209,
+          "load_ms": 76.115292,
+          "total_ms": 316.181167,
+          "eval_count": 1
+        },
+        {
+          "response": "3",
+          "is_correct": true,
+          "eval_ms": 1.220833,
+          "prompt_eval_ms": 51.4695,
+          "load_ms": 76.33325,
+          "total_ms": 129.023583,
+          "eval_count": 1
+        },
+        {
+          "response": "3",
+          "is_correct": true,
+          "eval_ms": 1.192,
+          "prompt_eval_ms": 52.374625,
+          "load_ms": 77.057,
+          "total_ms": 130.623625,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 11,
+      "question": "How many e's in 'excellence'? ONLY the number.",
+      "correct_answer": "4",
+      "model_answer": "3",
+      "is_correct": false,
+      "category": "string",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 10.259694333333332,
+      "eval_ms_std": 14.851195514833016,
+      "eval_ms_all": [
+        27.40825,
+        1.74275,
+        1.628083
+      ],
+      "prompt_eval_ms": 192.120958,
+      "trials": [
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 27.40825,
+          "prompt_eval_ms": 192.120958,
+          "load_ms": 78.440792,
+          "total_ms": 297.97,
+          "eval_count": 1
+        },
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 1.74275,
+          "prompt_eval_ms": 63.72425,
+          "load_ms": 74.900542,
+          "total_ms": 140.367542,
+          "eval_count": 1
+        },
+        {
+          "response": "3",
+          "is_correct": false,
+          "eval_ms": 1.628083,
+          "prompt_eval_ms": 58.5,
+          "load_ms": 74.525833,
+          "total_ms": 134.653916,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 12,
+      "question": "How many l's in 'llama'? ONLY the number.",
+      "correct_answer": "2",
+      "model_answer": "2",
+      "is_correct": true,
+      "category": "string",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 5.081249666666666,
+      "eval_ms_std": 3.6288767758904865,
+      "eval_ms_all": [
+        8.882291,
+        1.653375,
+        4.708083
+      ],
+      "prompt_eval_ms": 188.237792,
+      "trials": [
+        {
+          "response": "2",
+          "is_correct": true,
+          "eval_ms": 8.882291,
+          "prompt_eval_ms": 188.237792,
+          "load_ms": 74.737208,
+          "total_ms": 271.857291,
+          "eval_count": 1
+        },
+        {
+          "response": "2",
+          "is_correct": true,
+          "eval_ms": 1.653375,
+          "prompt_eval_ms": 60.313125,
+          "load_ms": 92.158833,
+          "total_ms": 154.125333,
+          "eval_count": 1
+        },
+        {
+          "response": "2",
+          "is_correct": true,
+          "eval_ms": 4.708083,
+          "prompt_eval_ms": 57.602167,
+          "load_ms": 72.553125,
+          "total_ms": 134.863375,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 13,
+      "question": "How many s's in 'mississippi'? ONLY the number.",
+      "correct_answer": "4",
+      "model_answer": "20",
+      "is_correct": false,
+      "category": "string",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 5.691445,
+      "eval_ms_std": 8.107802748557651,
+      "eval_ms_all": [
+        15.0535,
+        1.030667,
+        0.990168
+      ],
+      "prompt_eval_ms": 192.766917,
+      "trials": [
+        {
+          "response": "20",
+          "is_correct": false,
+          "eval_ms": 15.0535,
+          "prompt_eval_ms": 192.766917,
+          "load_ms": 85.691083,
+          "total_ms": 293.5115,
+          "eval_count": 1
+        },
+        {
+          "response": "20",
+          "is_correct": false,
+          "eval_ms": 1.030667,
+          "prompt_eval_ms": 59.624041,
+          "load_ms": 78.659709,
+          "total_ms": 139.314417,
+          "eval_count": 1
+        },
+        {
+          "response": "20",
+          "is_correct": false,
+          "eval_ms": 0.990168,
+          "prompt_eval_ms": 58.248166,
+          "load_ms": 76.324,
+          "total_ms": 135.562334,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 14,
+      "question": "How many p's in 'pepper'? ONLY the number.",
+      "correct_answer": "3",
+      "model_answer": "2",
+      "is_correct": false,
+      "category": "string",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 6.190902666666667,
+      "eval_ms_std": 4.425392251941779,
+      "eval_ms_all": [
+        10.541,
+        6.337833,
+        1.693875
+      ],
+      "prompt_eval_ms": 185.237042,
+      "trials": [
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 10.541,
+          "prompt_eval_ms": 185.237042,
+          "load_ms": 77.505541,
+          "total_ms": 273.283583,
+          "eval_count": 1
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 6.337833,
+          "prompt_eval_ms": 63.950125,
+          "load_ms": 75.76225,
+          "total_ms": 146.050208,
+          "eval_count": 1
+        },
+        {
+          "response": "2",
+          "is_correct": false,
+          "eval_ms": 1.693875,
+          "prompt_eval_ms": 67.618125,
+          "load_ms": 80.438791,
+          "total_ms": 149.750791,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 15,
+      "question": "A bat and ball cost $1.10. The bat costs $1 more than the ball. How much is the ball in cents? ONLY the number.",
+      "correct_answer": "5",
+      "model_answer": "11",
+      "is_correct": false,
+      "category": "logic",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 5.277819333333333,
+      "eval_ms_std": 7.212632137709668,
+      "eval_ms_all": [
+        13.603499,
+        1.300333,
+        0.929626
+      ],
+      "prompt_eval_ms": 355.146792,
+      "trials": [
+        {
+          "response": "11",
+          "is_correct": false,
+          "eval_ms": 13.603499,
+          "prompt_eval_ms": 355.146792,
+          "load_ms": 107.699042,
+          "total_ms": 476.449333,
+          "eval_count": 1
+        },
+        {
+          "response": "11",
+          "is_correct": false,
+          "eval_ms": 1.300333,
+          "prompt_eval_ms": 51.469459,
+          "load_ms": 82.534667,
+          "total_ms": 135.304459,
+          "eval_count": 1
+        },
+        {
+          "response": "11",
+          "is_correct": false,
+          "eval_ms": 0.929626,
+          "prompt_eval_ms": 53.389458,
+          "load_ms": 72.531333,
+          "total_ms": 126.850417,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 16,
+      "question": "5 machines make 5 widgets in 5 minutes. How many minutes for 100 machines to make 100 widgets? ONLY the number.",
+      "correct_answer": "5",
+      "model_answer": "5",
+      "is_correct": true,
+      "category": "logic",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 2.649875,
+      "eval_ms_std": 2.3885925367108976,
+      "eval_ms_all": [
+        5.385709,
+        1.584916,
+        0.979
+      ],
+      "prompt_eval_ms": 357.2775,
+      "trials": [
+        {
+          "response": "5",
+          "is_correct": true,
+          "eval_ms": 5.385709,
+          "prompt_eval_ms": 357.2775,
+          "load_ms": 73.601333,
+          "total_ms": 436.264542,
+          "eval_count": 1
+        },
+        {
+          "response": "5",
+          "is_correct": true,
+          "eval_ms": 1.584916,
+          "prompt_eval_ms": 57.818834,
+          "load_ms": 90.206792,
+          "total_ms": 149.610542,
+          "eval_count": 1
+        },
+        {
+          "response": "5",
+          "is_correct": true,
+          "eval_ms": 0.979,
+          "prompt_eval_ms": 59.010958,
+          "load_ms": 86.330792,
+          "total_ms": 146.32075,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 17,
+      "question": "A farmer has 17 sheep. All but 9 die. How many are left? ONLY the number.",
+      "correct_answer": "9",
+      "model_answer": "8",
+      "is_correct": false,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 1.8051113333333333,
+      "eval_ms_std": 0.8690737830071351,
+      "eval_ms_all": [
+        2.80725,
+        1.349625,
+        1.258459
+      ],
+      "prompt_eval_ms": 180.351125,
+      "trials": [
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 2.80725,
+          "prompt_eval_ms": 180.351125,
+          "load_ms": 73.36575,
+          "total_ms": 256.524125,
+          "eval_count": 1
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 1.349625,
+          "prompt_eval_ms": 60.252958,
+          "load_ms": 85.026042,
+          "total_ms": 146.628625,
+          "eval_count": 1
+        },
+        {
+          "response": "8",
+          "is_correct": false,
+          "eval_ms": 1.258459,
+          "prompt_eval_ms": 60.396416,
+          "load_ms": 82.397,
+          "total_ms": 144.051875,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 18,
+      "question": "How many months have 28 days? ONLY the number.",
+      "correct_answer": "12",
+      "model_answer": "All",
+      "is_correct": false,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 1.784875,
+      "eval_ms_std": 1.4110101437938,
+      "eval_ms_all": [
+        3.404792,
+        1.126083,
+        0.82375
+      ],
+      "prompt_eval_ms": 194.348041,
+      "trials": [
+        {
+          "response": "All",
+          "is_correct": false,
+          "eval_ms": 3.404792,
+          "prompt_eval_ms": 194.348041,
+          "load_ms": 76.136875,
+          "total_ms": 273.889708,
+          "eval_count": 1
+        },
+        {
+          "response": "All",
+          "is_correct": false,
+          "eval_ms": 1.126083,
+          "prompt_eval_ms": 60.7195,
+          "load_ms": 81.110084,
+          "total_ms": 142.955667,
+          "eval_count": 1
+        },
+        {
+          "response": "All",
+          "is_correct": false,
+          "eval_ms": 0.82375,
+          "prompt_eval_ms": 52.944625,
+          "load_ms": 71.520166,
+          "total_ms": 125.288541,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 19,
+      "question": "You're in a race. You pass the person in 2nd. What place are you now? ONLY the number.",
+      "correct_answer": "2",
+      "model_answer": "1",
+      "is_correct": false,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 2.7515696666666667,
+      "eval_ms_std": 2.80446266815487,
+      "eval_ms_all": [
+        5.985584,
+        1.279042,
+        0.990083
+      ],
+      "prompt_eval_ms": 192.597416,
+      "trials": [
+        {
+          "response": "1",
+          "is_correct": false,
+          "eval_ms": 5.985584,
+          "prompt_eval_ms": 192.597416,
+          "load_ms": 67.55875,
+          "total_ms": 266.14175,
+          "eval_count": 1
+        },
+        {
+          "response": "1",
+          "is_correct": false,
+          "eval_ms": 1.279042,
+          "prompt_eval_ms": 59.401625,
+          "load_ms": 86.797083,
+          "total_ms": 147.47775,
+          "eval_count": 1
+        },
+        {
+          "response": "1",
+          "is_correct": false,
+          "eval_ms": 0.990083,
+          "prompt_eval_ms": 57.345167,
+          "load_ms": 84.441458,
+          "total_ms": 142.776708,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 20,
+      "question": "Is 97 prime? Answer ONLY yes or no.",
+      "correct_answer": "yes",
+      "model_answer": "Yes",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "eval_ms_mean": 2.020652666666667,
+      "eval_ms_std": 1.6115739835869571,
+      "eval_ms_all": [
+        3.876167,
+        1.21525,
+        0.970541
+      ],
+      "prompt_eval_ms": 196.352875,
+      "trials": [
+        {
+          "response": "Yes",
+          "is_correct": true,
+          "eval_ms": 3.876167,
+          "prompt_eval_ms": 196.352875,
+          "load_ms": 80.075792,
+          "total_ms": 280.304834,
+          "eval_count": 1
+        },
+        {
+          "response": "Yes",
+          "is_correct": true,
+          "eval_ms": 1.21525,
+          "prompt_eval_ms": 57.306833,
+          "load_ms": 75.650209,
+          "total_ms": 134.172292,
+          "eval_count": 1
+        },
+        {
+          "response": "Yes",
+          "is_correct": true,
+          "eval_ms": 0.970541,
+          "prompt_eval_ms": 56.822834,
+          "load_ms": 82.895416,
+          "total_ms": 140.688791,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 21,
+      "question": "Is 91 prime? Answer ONLY yes or no.",
+      "correct_answer": "no",
+      "model_answer": "Yes",
+      "is_correct": false,
+      "category": "math",
+      "difficulty": "hard",
+      "eval_ms_mean": 1.322236,
+      "eval_ms_std": 0.18122578674956827,
+      "eval_ms_all": [
+        1.265667,
+        1.524999,
+        1.176042
+      ],
+      "prompt_eval_ms": 192.942833,
+      "trials": [
+        {
+          "response": "Yes",
+          "is_correct": false,
+          "eval_ms": 1.265667,
+          "prompt_eval_ms": 192.942833,
+          "load_ms": 70.889125,
+          "total_ms": 265.097625,
+          "eval_count": 1
+        },
+        {
+          "response": "Yes",
+          "is_correct": false,
+          "eval_ms": 1.524999,
+          "prompt_eval_ms": 67.066792,
+          "load_ms": 98.701417,
+          "total_ms": 167.293208,
+          "eval_count": 1
+        },
+        {
+          "response": "Yes",
+          "is_correct": false,
+          "eval_ms": 1.176042,
+          "prompt_eval_ms": 54.426208,
+          "load_ms": 92.040667,
+          "total_ms": 147.642917,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 22,
+      "question": "Is the number 1 prime? Answer ONLY yes or no.",
+      "correct_answer": "no",
+      "model_answer": "Yes",
+      "is_correct": false,
+      "category": "math",
+      "difficulty": "adversarial",
+      "eval_ms_mean": 2.836749666666667,
+      "eval_ms_std": 2.338195595052376,
+      "eval_ms_all": [
+        1.170916,
+        5.50975,
+        1.829583
+      ],
+      "prompt_eval_ms": 191.324667,
+      "trials": [
+        {
+          "response": "Yes",
+          "is_correct": false,
+          "eval_ms": 1.170916,
+          "prompt_eval_ms": 191.324667,
+          "load_ms": 83.475959,
+          "total_ms": 275.971542,
+          "eval_count": 1
+        },
+        {
+          "response": "Yes",
+          "is_correct": false,
+          "eval_ms": 5.50975,
+          "prompt_eval_ms": 57.977208,
+          "load_ms": 113.857667,
+          "total_ms": 177.344625,
+          "eval_count": 1
+        },
+        {
+          "response": "Yes",
+          "is_correct": false,
+          "eval_ms": 1.829583,
+          "prompt_eval_ms": 59.969292,
+          "load_ms": 74.001584,
+          "total_ms": 135.800459,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 23,
+      "question": "Is 87 prime? Answer ONLY yes or no.",
+      "correct_answer": "no",
+      "model_answer": "No",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "eval_ms_mean": 2.986472,
+      "eval_ms_std": 2.0141796786828627,
+      "eval_ms_all": [
+        2.677917,
+        5.137125,
+        1.144374
+      ],
+      "prompt_eval_ms": 196.217958,
+      "trials": [
+        {
+          "response": "No",
+          "is_correct": true,
+          "eval_ms": 2.677917,
+          "prompt_eval_ms": 196.217958,
+          "load_ms": 73.284417,
+          "total_ms": 272.180292,
+          "eval_count": 1
+        },
+        {
+          "response": "No",
+          "is_correct": true,
+          "eval_ms": 5.137125,
+          "prompt_eval_ms": 63.749,
+          "load_ms": 100.005667,
+          "total_ms": 168.891792,
+          "eval_count": 1
+        },
+        {
+          "response": "No",
+          "is_correct": true,
+          "eval_ms": 1.144374,
+          "prompt_eval_ms": 62.309709,
+          "load_ms": 79.515625,
+          "total_ms": 142.969708,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 24,
+      "question": "Is 0 even? Answer ONLY yes or no.",
+      "correct_answer": "yes",
+      "model_answer": "No",
+      "is_correct": false,
+      "category": "math",
+      "difficulty": "medium",
+      "eval_ms_mean": 1.285764,
+      "eval_ms_std": 0.2962115478640223,
+      "eval_ms_all": [
+        1.1025,
+        1.127292,
+        1.6275
+      ],
+      "prompt_eval_ms": 181.809167,
+      "trials": [
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 1.1025,
+          "prompt_eval_ms": 181.809167,
+          "load_ms": 71.697792,
+          "total_ms": 254.609459,
+          "eval_count": 1
+        },
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 1.127292,
+          "prompt_eval_ms": 61.312125,
+          "load_ms": 75.308166,
+          "total_ms": 137.747583,
+          "eval_count": 1
+        },
+        {
+          "response": "No",
+          "is_correct": false,
+          "eval_ms": 1.6275,
+          "prompt_eval_ms": 58.273625,
+          "load_ms": 82.80275,
+          "total_ms": 142.703875,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 25,
+      "question": "Capital of France? ONE word only.",
+      "correct_answer": "Paris",
+      "model_answer": "Paris",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "easy",
+      "eval_ms_mean": 2.160208,
+      "eval_ms_std": 1.6440247342777417,
+      "eval_ms_all": [
+        4.057249,
+        1.272875,
+        1.1505
+      ],
+      "prompt_eval_ms": 194.215917,
+      "trials": [
+        {
+          "response": "Paris",
+          "is_correct": true,
+          "eval_ms": 4.057249,
+          "prompt_eval_ms": 194.215917,
+          "load_ms": 74.278334,
+          "total_ms": 272.5515,
+          "eval_count": 1
+        },
+        {
+          "response": "Paris",
+          "is_correct": true,
+          "eval_ms": 1.272875,
+          "prompt_eval_ms": 59.790208,
+          "load_ms": 73.275333,
+          "total_ms": 134.338416,
+          "eval_count": 1
+        },
+        {
+          "response": "Paris",
+          "is_correct": true,
+          "eval_ms": 1.1505,
+          "prompt_eval_ms": 54.360875,
+          "load_ms": 82.245667,
+          "total_ms": 137.757042,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 26,
+      "question": "Capital of Japan? ONE word only.",
+      "correct_answer": "Tokyo",
+      "model_answer": "Tok",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "easy",
+      "eval_ms_mean": 1.393445,
+      "eval_ms_std": 0.4721647182032982,
+      "eval_ms_all": [
+        1.937875,
+        1.146459,
+        1.096001
+      ],
+      "prompt_eval_ms": 185.103375,
+      "trials": [
+        {
+          "response": "Tok",
+          "is_correct": true,
+          "eval_ms": 1.937875,
+          "prompt_eval_ms": 185.103375,
+          "load_ms": 75.327542,
+          "total_ms": 262.368792,
+          "eval_count": 1
+        },
+        {
+          "response": "Tok",
+          "is_correct": true,
+          "eval_ms": 1.146459,
+          "prompt_eval_ms": 60.427583,
+          "load_ms": 88.963667,
+          "total_ms": 150.537709,
+          "eval_count": 1
+        },
+        {
+          "response": "Tok",
+          "is_correct": true,
+          "eval_ms": 1.096001,
+          "prompt_eval_ms": 57.861916,
+          "load_ms": 90.5115,
+          "total_ms": 149.469417,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 27,
+      "question": "Capital of Australia? ONE word only.",
+      "correct_answer": "Canberra",
+      "model_answer": "Can",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "medium",
+      "eval_ms_mean": 2.9377773333333335,
+      "eval_ms_std": 1.7044376247156519,
+      "eval_ms_all": [
+        4.343083,
+        1.041833,
+        3.428416
+      ],
+      "prompt_eval_ms": 189.672334,
+      "trials": [
+        {
+          "response": "Can",
+          "is_correct": true,
+          "eval_ms": 4.343083,
+          "prompt_eval_ms": 189.672334,
+          "load_ms": 80.921291,
+          "total_ms": 274.936708,
+          "eval_count": 1
+        },
+        {
+          "response": "Can",
+          "is_correct": true,
+          "eval_ms": 1.041833,
+          "prompt_eval_ms": 57.917625,
+          "load_ms": 71.78575,
+          "total_ms": 130.745208,
+          "eval_count": 1
+        },
+        {
+          "response": "Can",
+          "is_correct": true,
+          "eval_ms": 3.428416,
+          "prompt_eval_ms": 54.832292,
+          "load_ms": 87.117667,
+          "total_ms": 145.378375,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 28,
+      "question": "Capital of Myanmar? ONE word only.",
+      "correct_answer": "Naypyidaw",
+      "model_answer": "N",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "hard",
+      "eval_ms_mean": 1.0272086666666667,
+      "eval_ms_std": 0.1645723593813169,
+      "eval_ms_all": [
+        0.984667,
+        1.208875,
+        0.888084
+      ],
+      "prompt_eval_ms": 193.569541,
+      "trials": [
+        {
+          "response": "N",
+          "is_correct": true,
+          "eval_ms": 0.984667,
+          "prompt_eval_ms": 193.569541,
+          "load_ms": 76.725584,
+          "total_ms": 271.279792,
+          "eval_count": 1
+        },
+        {
+          "response": "N",
+          "is_correct": true,
+          "eval_ms": 1.208875,
+          "prompt_eval_ms": 60.723875,
+          "load_ms": 75.590542,
+          "total_ms": 137.523292,
+          "eval_count": 1
+        },
+        {
+          "response": "N",
+          "is_correct": true,
+          "eval_ms": 0.888084,
+          "prompt_eval_ms": 58.4005,
+          "load_ms": 87.424208,
+          "total_ms": 146.712792,
+          "eval_count": 1
+        }
+      ]
+    },
+    {
+      "task_index": 29,
+      "question": "Capital of Brazil? ONE word only.",
+      "correct_answer": "Brasilia",
+      "model_answer": "Br",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "medium",
+      "eval_ms_mean": 1.885764,
+      "eval_ms_std": 1.8429749547242902,
+      "eval_ms_all": [
+        4.013209,
+        0.867208,
+        0.776875
+      ],
+      "prompt_eval_ms": 188.858458,
+      "trials": [
+        {
+          "response": "Br",
+          "is_correct": true,
+          "eval_ms": 4.013209,
+          "prompt_eval_ms": 188.858458,
+          "load_ms": 78.60725,
+          "total_ms": 271.478917,
+          "eval_count": 1
+        },
+        {
+          "response": "Br",
+          "is_correct": true,
+          "eval_ms": 0.867208,
+          "prompt_eval_ms": 51.222875,
+          "load_ms": 79.52925,
+          "total_ms": 131.619333,
+          "eval_count": 1
+        },
+        {
+          "response": "Br",
+          "is_correct": true,
+          "eval_ms": 0.776875,
+          "prompt_eval_ms": 56.868833,
+          "load_ms": 80.940625,
+          "total_ms": 138.586333,
+          "eval_count": 1
+        }
+      ]
+    }
+  ]
+}
