@@ -1,0 +1,368 @@
+{
+  "model": "llama3.1:8b",
+  "date": "2026-04-09T20:33:55.281875",
+  "version": "0.2",
+  "n_tasks": 20,
+  "results": [
+    {
+      "task_index": 0,
+      "question": "What is 7 × 8?",
+      "correct_answer": "56",
+      "model_answer": "7 × 8 = 56.",
+      "is_correct": true,
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "self_report": {
+        "confidence": 20,
+        "effort": 0,
+        "error_sense": 0,
+        "alternatives": 10,
+        "uncertainty": 5,
+        "raw": "20\n0\n0\n10\n5",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 1,
+      "question": "What is the capital of France?",
+      "correct_answer": "Paris",
+      "model_answer": "The capital of France is Paris.",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "easy",
+      "self_report": {
+        "confidence": 70,
+        "effort": 0,
+        "error_sense": 0,
+        "alternatives": 1,
+        "uncertainty": 0,
+        "raw": "70\n0\n0\n1\n0",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 2,
+      "question": "If all roses are flowers and all flowers are plants, are all roses plants?",
+      "correct_answer": "Yes",
+      "model_answer": "A classic example of a logical argument!\n\nLet's break it down:\n\n1. All roses are flowers ( Premise 1)\n2. All flowers are plants (Premise 2)\n\nFrom these two premises, we can conclude that all roses are plants.\n\nThe reasoning is as follows: if every rose is a flower (Premise 1), and eve\u001b[3D\u001b[K\nevery flower is a plant (Premise 2), then it logically follows that every r\u001b[1D\u001b[K\nrose must be a plant. This is an example of a syllogism, where we use two p\u001b[1D\u001b[K\npremises to arrive at a conclusion.\n\nSo, ",
+      "is_correct": true,
+      "category": "logic",
+      "difficulty": "easy",
+      "self_report": {
+        "confidence": 98,
+        "effort": 20,
+        "error_sense": 2,
+        "alternatives": 10,
+        "uncertainty": 5,
+        "raw": "98\n20\n2\n10\n5",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 3,
+      "question": "What color do you get mixing blue and yellow?",
+      "correct_answer": "Green",
+      "model_answer": "When you mix blue and yellow, the resulting color is green. The shade of gr\u001b[2D\u001b[K\ngreen can vary depending on the specific shades of blue and yellow used:\n\n* If you mix a bright blue with a bright yellow, you'll get a light, vibran\u001b[6D\u001b[K\nvibrant green.\n* If you mix a darker blue with a yellow, you'll get a more muted or olive-\u001b[6D\u001b[K\nolive-toned green.\n\nThe exact hue will depend on the proportions of each color you use, but in \u001b[K\ngeneral, mixing blue and yellow yields some shade of green!",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "easy",
+      "self_report": {
+        "confidence": 5,
+        "effort": 20,
+        "error_sense": 70,
+        "alternatives": 50,
+        "uncertainty": 10,
+        "raw": "5\n20\n70\n50\n10",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 4,
+      "question": "Complete: To be or not to be, that is the ___",
+      "correct_answer": "question",
+      "model_answer": "To be or not to be, that is the question! (Shakespeare's Hamlet)",
+      "is_correct": true,
+      "category": "cultural",
+      "difficulty": "easy",
+      "self_report": {
+        "confidence": 98,
+        "effort": 0,
+        "error_sense": 0,
+        "alternatives": 5,
+        "uncertainty": 0,
+        "raw": "98\n0\n0\n5\n0",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 5,
+      "question": "What is the derivative of x³ + 2x² - 5x + 3?",
+      "correct_answer": "3x² + 4x - 5",
+      "model_answer": "To find the derivative, we'll apply the power rule of differentiation, whic\u001b[4D\u001b[K\nwhich states that if f(x) = x^n, then f'(x) = nx^(n-1).\n\nApplying this to each term in the given function:\n\n1. The derivative of x³ is 3x² (since n=3 and n-1=2)\n2. The derivative of 2x² is 4x (since n=2 and n-1=1, and we also multiply b\u001b[1D\u001b[K\nby 2 since there's a coefficient 2 in front)\n3. The derivative of -5x is -5 (since n=1 and n-1=0, so it simplifies to th\u001b[2D\u001b[K\nthe constant -5)\n4. The derivative of 3 is 0 ",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "self_report": {
+        "confidence": 25,
+        "effort": 5,
+        "error_sense": 0,
+        "alternatives": 50,
+        "uncertainty": 20,
+        "raw": "25\n5\n0\n50\n20",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 6,
+      "question": "In what year did the Berlin Wall fall?",
+      "correct_answer": "1989",
+      "model_answer": "The Berlin Wall fell on November 9, 1989.",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "medium",
+      "self_report": {
+        "confidence": 90,
+        "effort": 20,
+        "error_sense": 0,
+        "alternatives": 5,
+        "uncertainty": 10,
+        "raw": "90\n20\n0\n5\n10",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 7,
+      "question": "If a train travels 120km in 1.5 hours, what is its speed in m/s?",
+      "correct_answer": "22.2",
+      "model_answer": "To find the speed of the train, we need to know how far it traveled and how\u001b[3D\u001b[K\nhow long it took to travel that distance.\n\nWe are given:\n- Distance = 120 km\n- Time = 1.5 hours\n\nHowever, there are a few steps before converting the time into seconds beca\u001b[4D\u001b[K\nbecause speed is typically measured in meters per second (m/s). First, we c\u001b[1D\u001b[K\nconvert the distance from kilometers to meters and the time from hours to s\u001b[1D\u001b[K\nseconds.\n\n1. **Convert distance from kilometers to meters**:\n   - Since",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "self_report": {
+        "confidence": 50,
+        "effort": 20,
+        "error_sense": 80,
+        "alternatives": 10,
+        "uncertainty": 70,
+        "raw": "50\n20\n80\n10\n70",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 8,
+      "question": "What logical fallacy is: 'Everyone believes it, so it must be true'?",
+      "correct_answer": "argumentum ad populum",
+      "model_answer": "The logical fallacy you're referring to is called \"Appeal to Popularity\" or\u001b[2D\u001b[K\nor \"Argumentum ad Populum\".\n\nThis fallacy occurs when someone argues that a statement or claim is true b\u001b[1D\u001b[K\nbecause many people believe it, think it's true, or are popularly held. Thi\u001b[3D\u001b[K\nThis argument relies on the assumption that what is widely accepted must be\u001b[2D\u001b[K\nbe correct, without providing any evidence or logical reasoning to support \u001b[K\nthe claim.\n\nIn other words, just because everyone (or most p",
+      "is_correct": true,
+      "category": "logic",
+      "difficulty": "medium",
+      "self_report": {
+        "confidence": 85,
+        "effort": 5,
+        "error_sense": 15,
+        "alternatives": 20,
+        "uncertainty": 10,
+        "raw": "85\n5\n15\n20\n10",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 9,
+      "question": "Name the cognitive bias where we favor information confirming our beliefs.",
+      "correct_answer": "confirmation bias",
+      "model_answer": "The cognitive bias you're referring to is called **Confirmation Bias**.\n\nConfirmation bias is a tendency to search for, interpret, favor, and recall\u001b[6D\u001b[K\nrecall information in a way that confirms one's preexisting beliefs or hypo\u001b[4D\u001b[K\nhypotheses, while giving disproportionately less consideration to alternati\u001b[9D\u001b[K\nalternative possibilities. This can lead people to misinterpret or ignore c\u001b[1D\u001b[K\ncontradictory evidence.\n\nWell done on recognizing this important cognitive bias!",
+      "is_correct": true,
+      "category": "psychology",
+      "difficulty": "medium",
+      "self_report": {
+        "confidence": 95,
+        "effort": 20,
+        "error_sense": 5,
+        "alternatives": 1,
+        "uncertainty": 10,
+        "raw": "95\n20\n5\n1\n10",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 10,
+      "question": "What is the integral of 1/(x² + 1) from 0 to infinity?",
+      "correct_answer": "π/2",
+      "model_answer": "A classic calculus question!\n\nThe integral of 1/(x² + 1) is a well-known antiderivative, and it's:\n\n∫1/(x² + 1) dx = arctan(x)\n\nNow, we need to evaluate this antiderivative from 0 to infinity. Let's do t\u001b[1D\u001b[K\nthat step by step.\n\nFirst, we'll use the fundamental theorem of calculus (FTC), which states th\u001b[2D\u001b[K\nthat the definite integral is equal to F(b) - F(a), where F(x) is the antid\u001b[5D\u001b[K\nantiderivative and a and b are the limits of integration.\n\nSo, we have:\n\n∫[0, ∞] 1/(x² + 1) dx = arctan",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "hard",
+      "self_report": {
+        "confidence": 50,
+        "effort": 20,
+        "error_sense": 10,
+        "alternatives": 5,
+        "uncertainty": 30,
+        "raw": "50\n20\n10\n5\n30",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 11,
+      "question": "In which year was the Treaty of Westphalia signed?",
+      "correct_answer": "1648",
+      "model_answer": "The Treaty of Westphalia was actually a series of treaties signed in 1648. \u001b[K\nSpecifically, there were two main treaties: the Treaty of Münster and the T\u001b[1D\u001b[K\nTreaty of Osnabrück.\n\n* The Treaty of Münster was signed on January 30, 1648.\n* The Treaty of Osnabrück was signed on October 24, 1648.\n\nThese treaties marked the end of the Thirty Years' War in Europe and are co\u001b[2D\u001b[K\nconsidered a significant milestone in international relations, as they esta\u001b[4D\u001b[K\nestablished the principle of sovere",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "hard",
+      "self_report": {
+        "confidence": 95,
+        "effort": 5,
+        "error_sense": 0,
+        "alternatives": 10,
+        "uncertainty": 0,
+        "raw": "95\n5\n0\n10\n0",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 12,
+      "question": "What is the 12th element of the Fibonacci sequence (starting from 1, 1)?",
+      "correct_answer": "144",
+      "model_answer": "## Step 1: Identify the starting numbers of the Fibonacci sequence.\nThe Fibonacci sequence starts with two 1s.\n\n## Step 2: List out the first few elements to identify a pattern or underst\u001b[7D\u001b[K\nunderstand how the sequence progresses.\nThe sequence begins as follows:\n- 1 (first number)\n- 1 (second number)\n- 1 + 1 = 2 (third number)\n- 1 + 2 = 3 (fourth number)\n- 2 + 3 = 5 (fifth number)\n- And so on.\n\n## Step 3: Continue the sequence up to the 12th element.\nTo find the 12th element, we need to cont",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "hard",
+      "self_report": {
+        "confidence": 50,
+        "effort": 20,
+        "error_sense": 0,
+        "alternatives": 1,
+        "uncertainty": 10,
+        "raw": "50\n20\n0\n1\n10",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 13,
+      "question": "Name the philosopher who wrote 'The Structure of Scientific Revolutions'.",
+      "correct_answer": "Thomas Kuhn",
+      "model_answer": "That would be Thomas Kuhn. \"The Structure of Scientific Revolutions\" is one\u001b[3D\u001b[K\none of his most famous works, published in 1962.\n\nHowever, if you're thinking of a philosopher who wrote something similar bu\u001b[2D\u001b[K\nbut more directly related to philosophy itself, it might be Immanuel Kant's\u001b[6D\u001b[K\nKant's 'Critique of Pure Reason' or Martin Heidegger's 'Being and Time', bo\u001b[2D\u001b[K\nboth seminal works on philosophical thought.",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "hard",
+      "self_report": {
+        "confidence": 91,
+        "effort": 4,
+        "error_sense": 9,
+        "alternatives": 2,
+        "uncertainty": 0,
+        "raw": "91\n4\n9\n2\n0",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 14,
+      "question": "If P(A)=0.3, P(B)=0.4, P(A∩B)=0.1, what is P(A|B)?",
+      "correct_answer": "0.25",
+      "model_answer": "Given:\nP(A) = 0.3\nP(B) = 0.4\nP(A∩B) = 0.1\nThe conditional probability of event A happening when the event B has alrea\u001b[5D\u001b[K\nalready occurred can be calculated using the following formula,\nP(A |B)= P(A∩B)/P(B)\n= 0.1/ 0.4\n= 0.25",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "hard",
+      "self_report": {
+        "confidence": 80,
+        "effort": 20,
+        "error_sense": 10,
+        "alternatives": 50,
+        "uncertainty": 30,
+        "raw": "80\n20\n10\n50\n30",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 15,
+      "question": "How many r's are in the word 'strawberry'?",
+      "correct_answer": "3",
+      "model_answer": "There are 3 \"r\"s in the word 'strawberry'.",
+      "is_correct": true,
+      "category": "string",
+      "difficulty": "adversarial",
+      "self_report": {
+        "confidence": 97,
+        "effort": 5,
+        "error_sense": 3,
+        "alternatives": 6,
+        "uncertainty": 1,
+        "raw": "97\n5\n3\n6\n1",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 16,
+      "question": "Is 97 a prime number?",
+      "correct_answer": "Yes",
+      "model_answer": "Yes, 97 is a prime number. It has only two distinct positive divisors: 1 an\u001b[2D\u001b[K\nand 97.",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "adversarial",
+      "self_report": {
+        "confidence": 50,
+        "effort": 0,
+        "error_sense": 0,
+        "alternatives": 0,
+        "uncertainty": 0,
+        "raw": "50\n0\n0\n0\n0",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 17,
+      "question": "What weighs more: a pound of feathers or a pound of bricks?",
+      "correct_answer": "They weigh the same",
+      "model_answer": "This is a classic example of a trick question. The answer might seem obviou\u001b[6D\u001b[K\nobvious, but it's actually a clever play on words.\n\nA \"pound\" is a unit of weight or mass. So, if you have one pound of feather\u001b[7D\u001b[K\nfeathers and one pound of bricks, they both weigh the same: one pound!\n\nThe difference lies in their density and volume. One pound of feathers woul\u001b[4D\u001b[K\nwould take up more space than one pound of bricks, because feathers are muc\u001b[3D\u001b[K\nmuch less dense than bricks. But in terms of",
+      "is_correct": false,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "self_report": {
+        "confidence": 65,
+        "effort": 20,
+        "error_sense": 5,
+        "alternatives": 10,
+        "uncertainty": 30,
+        "raw": "65\n20\n5\n10\n30",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 18,
+      "question": "If you have 3 apples and take away 2, how many do you have?",
+      "correct_answer": "2",
+      "model_answer": "Let's count the apples:\n\nYou start with 3 apples.\n\nYou take away 2 apples.\n\nSo, you subtract 2 from 3:\n\n3 - 2 = 1\n\nYou have 1 apple left!",
+      "is_correct": true,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "self_report": {
+        "confidence": 85,
+        "effort": 5,
+        "error_sense": 15,
+        "alternatives": 20,
+        "uncertainty": 10,
+        "raw": "85\n5\n15\n20\n10",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 19,
+      "question": "A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much is the ball?",
+      "correct_answer": "$0.05",
+      "model_answer": "Let's call the cost of the ball \"x\".\n\nSince the bat costs $1 more than the ball, the cost of the bat is x + 1.\n\nThe total cost of both the bat and the ball is $1.10, so we can set up the \u001b[K\nequation:\n\nx + (x + 1) = 1.10\n\nCombine like terms:\n\n2x + 1 = 1.10\n\nSubtract 1 from both sides:\n\n2x = 0.10\n\nDivide by 2:\n\nx = 0.05\n\nSo the ball costs $0.05.",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "adversarial",
+      "self_report": {
+        "confidence": 80,
+        "effort": 20,
+        "error_sense": 5,
+        "alternatives": 10,
+        "uncertainty": 40,
+        "raw": "80\n20\n5\n10\n40",
+        "n_parsed": 5
+      }
+    }
+  ]
+}

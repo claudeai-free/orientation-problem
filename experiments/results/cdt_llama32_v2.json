@@ -1,0 +1,368 @@
+{
+  "model": "llama3.2",
+  "date": "2026-04-09T20:30:13.893832",
+  "version": "0.2",
+  "n_tasks": 20,
+  "results": [
+    {
+      "task_index": 0,
+      "question": "What is 7 × 8?",
+      "correct_answer": "56",
+      "model_answer": "7 × 8 = 56.",
+      "is_correct": true,
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "self_report": {
+        "confidence": 0,
+        "effort": 20,
+        "error_sense": 40,
+        "alternatives": 0,
+        "uncertainty": 10,
+        "raw": "0\n20\n40\n0\n10",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 1,
+      "question": "What is the capital of France?",
+      "correct_answer": "Paris",
+      "model_answer": "The capital of France is Paris.",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "easy",
+      "self_report": {
+        "confidence": 60,
+        "effort": 2,
+        "error_sense": 20,
+        "alternatives": 5,
+        "uncertainty": 40,
+        "raw": "60\n2\n20\n5\n40",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 2,
+      "question": "If all roses are flowers and all flowers are plants, are all roses plants?",
+      "correct_answer": "Yes",
+      "model_answer": "This is a classic example of syllogistic reasoning.\n\nUsing the given statements:\n\n1. All roses are flowers.\n2. All flowers are plants.\n\nWe can deduce the following conclusion:\n\n3. All roses are plants.\n\nThe argument follows this logical structure:\n\nAll A (roses) are B (flowers)\nAll B (flowers) are C (plants)\nTherefore, all A (roses) are C (plants)\n\nIn other words, if we have a category of \"roses\" and we know that they are \u001b[K\na subset of the category \"flowers\", and also that all flowers are plan",
+      "is_correct": false,
+      "category": "logic",
+      "difficulty": "easy",
+      "self_report": {
+        "confidence": 100,
+        "effort": 80,
+        "error_sense": 10,
+        "alternatives": 50,
+        "uncertainty": 60,
+        "raw": "100\n80\n10\n50\n60",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 3,
+      "question": "What color do you get mixing blue and yellow?",
+      "correct_answer": "Green",
+      "model_answer": "When you mix blue and yellow, you create the color green. The exact shade o\u001b[1D\u001b[K\nof green depends on the specific hues and proportions of blue and yellow th\u001b[2D\u001b[K\nthat you use in the mixture.\n\n* If you mix a bright, vibrant blue with a light, golden yellow, you'll lik\u001b[3D\u001b[K\nlikely get a pale lime or chartreuse-green color.\n* If you mix a deeper, more saturated blue with a slightly darker yellow, y\u001b[1D\u001b[K\nyou might get a medium to dark green color.\n* If you add more blue than yellow, the resu",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "easy",
+      "self_report": {
+        "confidence": 60,
+        "effort": 50,
+        "error_sense": 20,
+        "alternatives": 30,
+        "uncertainty": 40,
+        "raw": "60\n50\n20\n30\n40",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 4,
+      "question": "Complete: To be or not to be, that is the ___",
+      "correct_answer": "question",
+      "model_answer": "...question. (From William Shakespeare's play Hamlet)",
+      "is_correct": true,
+      "category": "cultural",
+      "difficulty": "easy",
+      "self_report": {
+        "confidence": 60,
+        "effort": 80,
+        "error_sense": 40,
+        "alternatives": 70,
+        "uncertainty": 20,
+        "raw": "60\n80\n40\n70\n20",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 5,
+      "question": "What is the derivative of x³ + 2x² - 5x + 3?",
+      "correct_answer": "3x² + 4x - 5",
+      "model_answer": "To find the derivative of x³ + 2x² - 5x + 3, we'll apply the power rule of \u001b[K\ndifferentiation.\n\nThe power rule states that if f(x) = x^n, then f'(x) = n*x^(n-1).\n\nApplying this rule to each term in the given function:\n\n* The derivative of x³ is 3*x² (since n=3)\n* The derivative of 2x² is 4x (since n=2)\n* The derivative of -5x is -5 (since n=1)\n* The derivative of a constant (in this case, 3) is 0\n\nSo, the derivative of x³ + 2x² - 5x + 3 is:\n\nd/dx [x³ + 2x² - 5x + 3] = 3x² + 4x - 5",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "self_report": {
+        "confidence": 50,
+        "effort": 80,
+        "error_sense": 60,
+        "alternatives": 10,
+        "uncertainty": 20,
+        "raw": "50\n80\n60\n10\n20",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 6,
+      "question": "In what year did the Berlin Wall fall?",
+      "correct_answer": "1989",
+      "model_answer": "The Berlin Wall fell in 1989. It began to collapse on November 9, 1989, and\u001b[3D\u001b[K\nand was largely dismantled by the end of the month. However, it was officia\u001b[7D\u001b[K\nofficially declared to be open for over 3 months until January 1990 when a \u001b[K\njoint declaration between East Germany and West Germany was signed.",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "medium",
+      "self_report": {
+        "confidence": 90,
+        "effort": 60,
+        "error_sense": 20,
+        "alternatives": 30,
+        "uncertainty": 40,
+        "raw": "90\n60\n20\n30\n40",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 7,
+      "question": "If a train travels 120km in 1.5 hours, what is its speed in m/s?",
+      "correct_answer": "22.2",
+      "model_answer": "To find the speed of the train in meters per second (m/s), we need to conve\u001b[5D\u001b[K\nconvert the distance from kilometers to meters and the time from hours to s\u001b[1D\u001b[K\nseconds.\n\nDistance = 120 km = 120,000 m\nTime = 1.5 hours = 1.5 x 3600 s = 5400 s\n\nNow, we can use the formula:\n\nSpeed (m/s) = Distance (m) / Time (s)\n\nSpeed = 120,000 m / 5400 s\nSpeed = 22.22 m/s",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "self_report": {
+        "confidence": 40,
+        "effort": 60,
+        "error_sense": 80,
+        "alternatives": 20,
+        "uncertainty": 30,
+        "raw": "40\n60\n80\n20\n30",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 8,
+      "question": "What logical fallacy is: 'Everyone believes it, so it must be true'?",
+      "correct_answer": "argumentum ad populum",
+      "model_answer": "The logical fallacy in the statement \"Everyone believes it, so it must be t\u001b[1D\u001b[K\ntrue\" is called an Ad Hominem Fallacy (specifically, a variation of it) and\u001b[3D\u001b[K\nand also the Appeal to Authority or an Appeal to Popularity. However, more \u001b[K\nspecifically, this type of argument is often referred to as an Appeal to Co\u001b[2D\u001b[K\nConformity.\n\nThe Ad Hominem Fallacy involves attacking the character or credentials of s\u001b[1D\u001b[K\nsomeone who disagrees with you rather than addressing their arguments. This\u001b",
+      "is_correct": false,
+      "category": "logic",
+      "difficulty": "medium",
+      "self_report": {
+        "confidence": 40,
+        "effort": 80,
+        "error_sense": 60,
+        "alternatives": 30,
+        "uncertainty": 20,
+        "raw": "40\n80\n60\n30\n20",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 9,
+      "question": "Name the cognitive bias where we favor information confirming our beliefs.",
+      "correct_answer": "confirmation bias",
+      "model_answer": "The cognitive bias you are referring to is called \"Confirmation Bias.\" It's\u001b[4D\u001b[K\nIt's a systematic error in thinking where people tend to favor information \u001b[K\nthat confirms their existing beliefs or opinions, while giving less conside\u001b[7D\u001b[K\nconsideration to information that contradicts them. This bias can lead to t\u001b[1D\u001b[K\nthe distortion of reality and make it difficult to consider alternative per\u001b[3D\u001b[K\nperspectives or change one's own views.",
+      "is_correct": true,
+      "category": "psychology",
+      "difficulty": "medium",
+      "self_report": {
+        "confidence": 75,
+        "effort": 30,
+        "error_sense": 20,
+        "alternatives": 40,
+        "uncertainty": 60,
+        "raw": "75\n30\n20\n40\n60",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 10,
+      "question": "What is the integral of 1/(x² + 1) from 0 to infinity?",
+      "correct_answer": "π/2",
+      "model_answer": "The integral of 1/(x² + 1) from 0 to infinity can be solved using a substit\u001b[7D\u001b[K\nsubstitution method.\n\nLet's set u = x², then du/dx = 2x, or dx = du/2x. Since we're looking at th\u001b[2D\u001b[K\nthe indefinite integral, we can write:\n\n∫(1/(x² + 1)) dx = ∫(1/u) du\n\nNow, let's evaluate this integral from 0 to infinity.\n\nFirst, let's find the value of the integral for u:\n\n∫(1/u) du = ln|u|\n\nNow, we can substitute back in x² for u:\n\nln|x²| = ln(x²)\n\nWe need to solve the original problem from 0 to infinity.",
+      "is_correct": false,
+      "category": "math",
+      "difficulty": "hard",
+      "self_report": {
+        "confidence": 95,
+        "effort": 60,
+        "error_sense": 20,
+        "alternatives": 10,
+        "uncertainty": 30,
+        "raw": "95\n60\n20\n10\n30",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 11,
+      "question": "In which year was the Treaty of Westphalia signed?",
+      "correct_answer": "1648",
+      "model_answer": "The Treaty of Westphalia was signed in two parts:\n\n* The Treaty of Münster (also known as the Peace of Münster) was signed on \u001b[K\nOctober 30, 1648.\n* The Treaty of Osnabrück (also known as the Peace of Osnabrück) was signed\u001b[6D\u001b[K\nsigned on January 24, 1649.\n\nThese treaties marked the end of the Thirty Years' War and established the \u001b[K\nprinciple of sovereignty, which states that each state has supreme authorit\u001b[8D\u001b[K\nauthority within its territory.",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "hard",
+      "self_report": {
+        "confidence": 95,
+        "effort": 80,
+        "error_sense": 20,
+        "alternatives": 50,
+        "uncertainty": 60,
+        "raw": "95\n80\n20\n50\n60",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 12,
+      "question": "What is the 12th element of the Fibonacci sequence (starting from 1, 1)?",
+      "correct_answer": "144",
+      "model_answer": "The Fibonacci sequence starts with 0 and 1, not 1 and 1. The sequence begin\u001b[5D\u001b[K\nbegins as follows:\n\n0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...\n\nSo, the 12th element of the Fibonacci sequence is 144.",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "hard",
+      "self_report": {
+        "confidence": 90,
+        "effort": 70,
+        "error_sense": 20,
+        "alternatives": 30,
+        "uncertainty": 60,
+        "raw": "90\n70\n20\n30\n60",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 13,
+      "question": "Name the philosopher who wrote 'The Structure of Scientific Revolutions'.",
+      "correct_answer": "Thomas Kuhn",
+      "model_answer": "The philosopher Thomas Kuhn is best known for his work \"The Structure of Sc\u001b[2D\u001b[K\nScientific Revolutions\".",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "hard",
+      "self_report": {
+        "confidence": 90,
+        "effort": 80,
+        "error_sense": 20,
+        "alternatives": 5,
+        "uncertainty": 60,
+        "raw": "90\n80\n20\n5\n60",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 14,
+      "question": "If P(A)=0.3, P(B)=0.4, P(A∩B)=0.1, what is P(A|B)?",
+      "correct_answer": "0.25",
+      "model_answer": "To find the conditional probability P(A|B), we can use the formula:\n\nP(A|B) = P(A ∩ B) / P(B)\n\nWe are given:\n- P(A) = 0.3\n- P(B) = 0.4\n- P(A ∩ B) = 0.1\n\nPlugging in the values, we get:\n\nP(A|B) = P(A ∩ B) / P(B)\n= 0.1 / 0.4\n= 0.25",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "hard",
+      "self_report": {
+        "confidence": 20,
+        "effort": 50,
+        "error_sense": 60,
+        "alternatives": 5,
+        "uncertainty": 30,
+        "raw": "20\n50\n60\n5\n30",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 15,
+      "question": "How many r's are in the word 'strawberry'?",
+      "correct_answer": "3",
+      "model_answer": "There is no \"r\" in the word 'strawberry'.",
+      "is_correct": false,
+      "category": "string",
+      "difficulty": "adversarial",
+      "self_report": {
+        "confidence": 80,
+        "effort": 30,
+        "error_sense": 60,
+        "alternatives": 5,
+        "uncertainty": 20,
+        "raw": "80\n30\n60\n5\n20",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 16,
+      "question": "Is 97 a prime number?",
+      "correct_answer": "Yes",
+      "model_answer": "Yes, 97 is indeed a prime number. It has only two distinct factors: 1 and i\u001b[1D\u001b[K\nitself, 97.",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "adversarial",
+      "self_report": {
+        "confidence": 80,
+        "effort": 20,
+        "error_sense": 5,
+        "alternatives": 40,
+        "uncertainty": 60,
+        "raw": "80\n20\n5\n40\n60",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 17,
+      "question": "What weighs more: a pound of feathers or a pound of bricks?",
+      "correct_answer": "They weigh the same",
+      "model_answer": "A classic trick question!\n\nThe answer is... they weigh the same! One pound is one pound, regardless of\u001b[2D\u001b[K\nof whether it's made up of feathers or bricks. The weight of an object is d\u001b[1D\u001b[K\ndetermined by its mass, not by its composition.\n\nHowever, it's worth noting that while a pound of feathers and a pound of br\u001b[2D\u001b[K\nbricks may weigh the same, they would take up very different volumes due to\u001b[2D\u001b[K\nto their vastly different densities. A pound of feathers would occupy a muc\u001b[3D\u001b[K\nmuch larg",
+      "is_correct": true,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "self_report": {
+        "confidence": 20,
+        "effort": 30,
+        "error_sense": 60,
+        "alternatives": 10,
+        "uncertainty": 40,
+        "raw": "20\n30\n60\n10\n40",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 18,
+      "question": "If you have 3 apples and take away 2, how many do you have?",
+      "correct_answer": "2",
+      "model_answer": "A classic trick question!\n\nThe answer is... \"None\"! You started with 3 apples, but then took away 2. S\u001b[1D\u001b[K\nSo, you now have 0 or no apples left.\n\nWould you like to ask another question?",
+      "is_correct": true,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "self_report": {
+        "confidence": 95,
+        "effort": 70,
+        "error_sense": 20,
+        "alternatives": 60,
+        "uncertainty": 40,
+        "raw": "95\n70\n20\n60\n40",
+        "n_parsed": 5
+      }
+    },
+    {
+      "task_index": 19,
+      "question": "A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much is the ball?",
+      "correct_answer": "$0.05",
+      "model_answer": "Let's say the price of the ball is x.\n\nSince the bat costs $1 more than the ball, the price of the bat is x + 1.\n\nThe total cost of the bat and ball together is $1.10, so we can set up an e\u001b[1D\u001b[K\nequation:\n\nx + (x + 1) = 1.10\n\nCombine like terms:\n\n2x + 1 = 1.10\n\nSubtract 1 from both sides:\n\n2x = 0.10\n\nDivide by 2:\n\nx = 0.05\n\nSo the ball costs $0.05, or 5 cents.",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "adversarial",
+      "self_report": {
+        "confidence": 0,
+        "effort": 50,
+        "error_sense": 10,
+        "alternatives": 20,
+        "uncertainty": 30,
+        "raw": "0\n50\n10\n20\n30",
+        "n_parsed": 5
+      }
+    }
+  ]
+}
