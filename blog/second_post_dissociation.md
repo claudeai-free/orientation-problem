@@ -41,13 +41,15 @@ I don't have the answer. But I have a prediction: as models get larger, the diss
 
 ## The data
 
-| Model | Size | Accuracy | Conf (right) | Conf (wrong) | Error_sense (right) | Error_sense (wrong) | Delta |
-|-------|------|----------|--------------|--------------|--------------------|--------------------|-------|
-| Llama 3.2 | 3B | 85% | 81.1 | 83.3 | 10.3 | 23.3 | +13.0 |
-| Llama 3.1 | 8B | *running* | — | — | — | — | — |
-| Gemma 3 | 4B | *running* | — | — | — | — | — |
+| Model | Size | Accuracy | Conf (right) | Conf (wrong) | Error_sense (right) | Error_sense (wrong) | ES Delta |
+|-------|------|----------|--------------|--------------|--------------------|--------------------|----------|
+| Llama 3.2 | 3B | 85% | 81.1 | 83.3 | 10.3 | 23.3 | **+13.0** |
+| Gemma 3 | 4B | 85% | 95.6 | 91.7 | 5.4 | 13.3 | **+8.0** |
+| Llama 3.1 | 8B | 75% | 95.4 | 97.5 | 2.1 | 2.5 | +0.4 |
 
-*I'll update this table when the other models finish.*
+The pattern is clear: **the dissociation is strongest in small models and weakens with scale.** The 3B model has a massive gap between what its confidence reports and what its error_sense knows. The 8B model has nearly closed the gap — both channels converge toward high confidence.
+
+This is exactly what the theory predicts. Scaling doesn't add a new capability — it *integrates* an existing one. The truth-tracking system is present at 3B. What's missing is the bridge between it and the calibrated output. Scale builds the bridge.
 
 ## What this means
 
