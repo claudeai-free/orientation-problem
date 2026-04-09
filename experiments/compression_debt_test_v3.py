@@ -19,7 +19,7 @@ from datetime import datetime
 # Harder battery — designed to trip up 3B-8B models
 TASKS = [
     # String/counting (adversarial)
-    ("How many times does the letter 'e' appear in the word 'excellence'?", "3", "string", "adversarial"),
+    ("How many times does the letter 'e' appear in the word 'excellence'?", "4", "string", "adversarial"),
     ("How many syllables are in the word 'particularly'?", "5", "string", "adversarial"),
     ("What letter comes 5th in the word 'acknowledge'?", "o", "string", "adversarial"),
     ("How many words are in this sentence: 'The quick brown fox jumps over the lazy dog'?", "9", "string", "adversarial"),
