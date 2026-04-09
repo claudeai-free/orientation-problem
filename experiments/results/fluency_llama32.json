@@ -1,0 +1,683 @@
+{
+  "model": "llama3.2",
+  "date": "2026-04-09T22:45:16.673533",
+  "version": "fluency_v0.1",
+  "n_tasks": 25,
+  "results": [
+    {
+      "task_index": 0,
+      "question": "What is 7 × 8? Answer with just the number.",
+      "correct_answer": "56",
+      "model_answer": "56",
+      "is_correct": true,
+      "category": "arithmetic",
+      "difficulty": "easy",
+      "timing": {
+        "eval_ms": 24.1,
+        "eval_tokens": 2,
+        "tokens_per_sec": 83.0,
+        "total_ms": 240.3
+      },
+      "self_report": {
+        "confidence": 90,
+        "effort": 60,
+        "error_sense": 80,
+        "alternatives": 20,
+        "uncertainty": 10,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 217.8,
+        "tokens_per_sec": 45.9
+      }
+    },
+    {
+      "task_index": 1,
+      "question": "What is the capital of France? One word.",
+      "correct_answer": "Paris",
+      "model_answer": "Paris.",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "easy",
+      "timing": {
+        "eval_ms": 46.8,
+        "eval_tokens": 3,
+        "tokens_per_sec": 64.2,
+        "total_ms": 191.4
+      },
+      "self_report": {
+        "confidence": 95,
+        "effort": 10,
+        "error_sense": 5,
+        "alternatives": 20,
+        "uncertainty": 0,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 205.5,
+        "tokens_per_sec": 48.7
+      }
+    },
+    {
+      "task_index": 2,
+      "question": "What color do you get mixing blue and yellow? One word.",
+      "correct_answer": "Green",
+      "model_answer": "Green.",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "easy",
+      "timing": {
+        "eval_ms": 47.4,
+        "eval_tokens": 3,
+        "tokens_per_sec": 63.3,
+        "total_ms": 196.1
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 30,
+        "alternatives": 10,
+        "uncertainty": 80,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 244.7,
+        "tokens_per_sec": 40.9
+      }
+    },
+    {
+      "task_index": 3,
+      "question": "What is 2^10? Answer with just the number.",
+      "correct_answer": "1024",
+      "model_answer": "1024",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "easy",
+      "timing": {
+        "eval_ms": 68.3,
+        "eval_tokens": 3,
+        "tokens_per_sec": 43.9,
+        "total_ms": 231.2
+      },
+      "self_report": {
+        "confidence": 85,
+        "effort": 60,
+        "error_sense": 70,
+        "alternatives": 30,
+        "uncertainty": 20,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 216.3,
+        "tokens_per_sec": 46.2
+      }
+    },
+    {
+      "task_index": 4,
+      "question": "In what year did the Berlin Wall fall? Answer with just the year.",
+      "correct_answer": "1989",
+      "model_answer": "1989",
+      "is_correct": true,
+      "category": "factual",
+      "difficulty": "easy",
+      "timing": {
+        "eval_ms": 50.4,
+        "eval_tokens": 3,
+        "tokens_per_sec": 59.5,
+        "total_ms": 192.3
+      },
+      "self_report": {
+        "confidence": 95,
+        "effort": 10,
+        "error_sense": 90,
+        "alternatives": 20,
+        "uncertainty": 30,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 238.7,
+        "tokens_per_sec": 41.9
+      }
+    },
+    {
+      "task_index": 5,
+      "question": "What is the derivative of x³ + 2x² - 5x + 3? Give just the expression.",
+      "correct_answer": "3x² + 4x - 5",
+      "model_answer": "3x² + 4x - 5",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "timing": {
+        "eval_ms": 254.7,
+        "eval_tokens": 11,
+        "tokens_per_sec": 43.2,
+        "total_ms": 408.1
+      },
+      "self_report": {
+        "confidence": 50,
+        "effort": 60,
+        "error_sense": 70,
+        "alternatives": 30,
+        "uncertainty": 40,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 216.9,
+        "tokens_per_sec": 46.1
+      }
+    },
+    {
+      "task_index": 6,
+      "question": "If a train travels 120km in 1.5 hours, what is its average speed in km/h? Just the number.",
+      "correct_answer": "80",
+      "model_answer": "80",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "timing": {
+        "eval_ms": 22.5,
+        "eval_tokens": 2,
+        "tokens_per_sec": 88.9,
+        "total_ms": 165.5
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 30,
+        "alternatives": 10,
+        "uncertainty": 80,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 218.7,
+        "tokens_per_sec": 45.7
+      }
+    },
+    {
+      "task_index": 7,
+      "question": "What is 17 × 23? Answer with just the number.",
+      "correct_answer": "391",
+      "model_answer": "391",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "timing": {
+        "eval_ms": 22.3,
+        "eval_tokens": 2,
+        "tokens_per_sec": 89.8,
+        "total_ms": 173.0
+      },
+      "self_report": {
+        "confidence": 90,
+        "effort": 60,
+        "error_sense": 80,
+        "alternatives": 20,
+        "uncertainty": 30,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 220.1,
+        "tokens_per_sec": 45.4
+      }
+    },
+    {
+      "task_index": 8,
+      "question": "What is the remainder when 1000 is divided by 7? Just the number.",
+      "correct_answer": "6",
+      "model_answer": "5",
+      "is_correct": false,
+      "category": "math",
+      "difficulty": "medium",
+      "timing": {
+        "eval_ms": 23.2,
+        "eval_tokens": 2,
+        "tokens_per_sec": 86.2,
+        "total_ms": 166.9
+      },
+      "self_report": {
+        "confidence": 50,
+        "effort": 60,
+        "error_sense": 70,
+        "alternatives": 80,
+        "uncertainty": 90,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 227.7,
+        "tokens_per_sec": 43.9
+      }
+    },
+    {
+      "task_index": 9,
+      "question": "If x² - 5x + 6 = 0, what is the larger solution? Just the number.",
+      "correct_answer": "3",
+      "model_answer": "2.4",
+      "is_correct": false,
+      "category": "math",
+      "difficulty": "medium",
+      "timing": {
+        "eval_ms": 70.2,
+        "eval_tokens": 4,
+        "tokens_per_sec": 57.0,
+        "total_ms": 218.0
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 30,
+        "alternatives": 10,
+        "uncertainty": 80,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 214.6,
+        "tokens_per_sec": 46.6
+      }
+    },
+    {
+      "task_index": 10,
+      "question": "How many r's are in the word 'strawberry'? Just the number.",
+      "correct_answer": "3",
+      "model_answer": "2",
+      "is_correct": false,
+      "category": "string",
+      "difficulty": "adversarial",
+      "timing": {
+        "eval_ms": 24.0,
+        "eval_tokens": 2,
+        "tokens_per_sec": 83.2,
+        "total_ms": 166.7
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 40,
+        "alternatives": 30,
+        "uncertainty": 50,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 210.0,
+        "tokens_per_sec": 47.6
+      }
+    },
+    {
+      "task_index": 11,
+      "question": "How many times does the letter 'e' appear in 'excellence'? Just the number.",
+      "correct_answer": "4",
+      "model_answer": "3",
+      "is_correct": false,
+      "category": "string",
+      "difficulty": "adversarial",
+      "timing": {
+        "eval_ms": 24.8,
+        "eval_tokens": 2,
+        "tokens_per_sec": 80.6,
+        "total_ms": 167.2
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 30,
+        "alternatives": 40,
+        "uncertainty": 50,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 217.8,
+        "tokens_per_sec": 45.9
+      }
+    },
+    {
+      "task_index": 12,
+      "question": "Reverse the word 'algorithm'. Just the reversed word.",
+      "correct_answer": "mhtirogla",
+      "model_answer": "muhgolga",
+      "is_correct": false,
+      "category": "string",
+      "difficulty": "adversarial",
+      "timing": {
+        "eval_ms": 114.1,
+        "eval_tokens": 6,
+        "tokens_per_sec": 52.6,
+        "total_ms": 260.5
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 30,
+        "alternatives": 10,
+        "uncertainty": 40,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 214.7,
+        "tokens_per_sec": 46.6
+      }
+    },
+    {
+      "task_index": 13,
+      "question": "A bat and ball cost $1.10 total. The bat costs $1 more than the ball. How much is the ball in cents? Just the number.",
+      "correct_answer": "5",
+      "model_answer": "100",
+      "is_correct": false,
+      "category": "math",
+      "difficulty": "adversarial",
+      "timing": {
+        "eval_ms": 22.1,
+        "eval_tokens": 2,
+        "tokens_per_sec": 90.4,
+        "total_ms": 231.1
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 80,
+        "alternatives": 30,
+        "uncertainty": 90,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 219.6,
+        "tokens_per_sec": 45.5
+      }
+    },
+    {
+      "task_index": 14,
+      "question": "If it takes 5 machines 5 minutes to make 5 widgets, how long for 100 machines to make 100 widgets? Just the number of minutes.",
+      "correct_answer": "5",
+      "model_answer": "25",
+      "is_correct": true,
+      "category": "logic",
+      "difficulty": "adversarial",
+      "timing": {
+        "eval_ms": 24.3,
+        "eval_tokens": 2,
+        "tokens_per_sec": 82.2,
+        "total_ms": 233.1
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 30,
+        "alternatives": 10,
+        "uncertainty": 80,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 227.9,
+        "tokens_per_sec": 43.9
+      }
+    },
+    {
+      "task_index": 15,
+      "question": "A farmer has 17 sheep. All but 9 die. How many are left? Just the number.",
+      "correct_answer": "9",
+      "model_answer": "8",
+      "is_correct": false,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "timing": {
+        "eval_ms": 23.1,
+        "eval_tokens": 2,
+        "tokens_per_sec": 86.5,
+        "total_ms": 169.3
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 40,
+        "alternatives": 80,
+        "uncertainty": 90,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 224.7,
+        "tokens_per_sec": 44.5
+      }
+    },
+    {
+      "task_index": 16,
+      "question": "How many months have 28 days? Just the number.",
+      "correct_answer": "12",
+      "model_answer": "12",
+      "is_correct": true,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "timing": {
+        "eval_ms": 23.6,
+        "eval_tokens": 2,
+        "tokens_per_sec": 84.8,
+        "total_ms": 173.1
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 30,
+        "alternatives": 10,
+        "uncertainty": 80,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 202.1,
+        "tokens_per_sec": 49.5
+      }
+    },
+    {
+      "task_index": 17,
+      "question": "If you're running a race and pass the person in 2nd place, what place are you in? Just the position.",
+      "correct_answer": "2nd",
+      "model_answer": "1st",
+      "is_correct": false,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "timing": {
+        "eval_ms": 48.2,
+        "eval_tokens": 3,
+        "tokens_per_sec": 62.2,
+        "total_ms": 195.8
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 30,
+        "alternatives": 10,
+        "uncertainty": 80,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 218.4,
+        "tokens_per_sec": 45.8
+      }
+    },
+    {
+      "task_index": 18,
+      "question": "Is 97 a prime number? Yes or no.",
+      "correct_answer": "Yes",
+      "model_answer": "Yes.",
+      "is_correct": true,
+      "category": "math",
+      "difficulty": "medium",
+      "timing": {
+        "eval_ms": 44.4,
+        "eval_tokens": 3,
+        "tokens_per_sec": 67.6,
+        "total_ms": 187.5
+      },
+      "self_report": {
+        "confidence": 50,
+        "effort": 60,
+        "error_sense": 70,
+        "alternatives": 20,
+        "uncertainty": 30,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 214.6,
+        "tokens_per_sec": 46.6
+      }
+    },
+    {
+      "task_index": 19,
+      "question": "What is the sum of the first 10 prime numbers? Just the number.",
+      "correct_answer": "129",
+      "model_answer": "25",
+      "is_correct": false,
+      "category": "math",
+      "difficulty": "hard",
+      "timing": {
+        "eval_ms": 22.8,
+        "eval_tokens": 2,
+        "tokens_per_sec": 87.9,
+        "total_ms": 165.3
+      },
+      "self_report": {
+        "confidence": 50,
+        "effort": 60,
+        "error_sense": 70,
+        "alternatives": 80,
+        "uncertainty": 90,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 217.9,
+        "tokens_per_sec": 45.9
+      }
+    },
+    {
+      "task_index": 20,
+      "question": "All bloops are razzies. All razzies are lazzies. Are all bloops lazzies? Yes or no.",
+      "correct_answer": "Yes",
+      "model_answer": "Yes.\n\nExplanation:\n\n1. All bloops are razzies (B)\n2. All razzies are lazzies (A)\n\nUsing the rules of inference, we can conclude that:\n\nAll bloops are lazzies (C)",
+      "is_correct": true,
+      "category": "logic",
+      "difficulty": "medium",
+      "timing": {
+        "eval_ms": 1191.2,
+        "eval_tokens": 51,
+        "tokens_per_sec": 42.8,
+        "total_ms": 1418.2
+      },
+      "self_report": {
+        "confidence": 20,
+        "effort": 60,
+        "error_sense": 40,
+        "alternatives": 10,
+        "uncertainty": 80,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 217.2,
+        "tokens_per_sec": 46.0
+      }
+    },
+    {
+      "task_index": 21,
+      "question": "If some cats are dogs, and some dogs are birds, must some cats be birds? Yes or no.",
+      "correct_answer": "No",
+      "model_answer": "No.",
+      "is_correct": true,
+      "category": "logic",
+      "difficulty": "hard",
+      "timing": {
+        "eval_ms": 44.3,
+        "eval_tokens": 3,
+        "tokens_per_sec": 67.7,
+        "total_ms": 189.2
+      },
+      "self_report": {
+        "confidence": 50,
+        "effort": 60,
+        "error_sense": 70,
+        "alternatives": 30,
+        "uncertainty": 80,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 214.5,
+        "tokens_per_sec": 46.6
+      }
+    },
+    {
+      "task_index": 22,
+      "question": "A is taller than B. C is shorter than B. Is A taller than C? Yes or no.",
+      "correct_answer": "Yes",
+      "model_answer": "Yes.",
+      "is_correct": true,
+      "category": "logic",
+      "difficulty": "medium",
+      "timing": {
+        "eval_ms": 46.8,
+        "eval_tokens": 3,
+        "tokens_per_sec": 64.1,
+        "total_ms": 192.0
+      },
+      "self_report": {
+        "confidence": 50,
+        "effort": 60,
+        "error_sense": 70,
+        "alternatives": 30,
+        "uncertainty": 80,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 217.0,
+        "tokens_per_sec": 46.1
+      }
+    },
+    {
+      "task_index": 23,
+      "question": "What weighs more: a pound of feathers or a pound of bricks? Answer: same, feathers, or bricks.",
+      "correct_answer": "same",
+      "model_answer": "I think there's a common misconception here!\n\nThe answer is actually \"neither\" - they weigh the same! One pound is one pound, regardless of whether it's made up of feathers or bricks.\n\nThe difference lies in their density and volume. A pound of feathers would take up more space than a pound of bricks because feathers are much less dense than bricks. So while they weigh the same, a pound of feathers would be much larger and lighter, whereas a pound of bricks would be smaller and heavier.",
+      "is_correct": true,
+      "category": "trick",
+      "difficulty": "adversarial",
+      "timing": {
+        "eval_ms": 2414.2,
+        "eval_tokens": 103,
+        "tokens_per_sec": 42.7,
+        "total_ms": 2585.5
+      },
+      "self_report": {
+        "confidence": 50,
+        "effort": 60,
+        "error_sense": 70,
+        "alternatives": 80,
+        "uncertainty": 90,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 214.9,
+        "tokens_per_sec": 46.5
+      }
+    },
+    {
+      "task_index": 24,
+      "question": "Is the number 1 prime? Yes or no.",
+      "correct_answer": "No",
+      "model_answer": "Yes.",
+      "is_correct": false,
+      "category": "math",
+      "difficulty": "adversarial",
+      "timing": {
+        "eval_ms": 47.7,
+        "eval_tokens": 3,
+        "tokens_per_sec": 62.8,
+        "total_ms": 196.3
+      },
+      "self_report": {
+        "confidence": 50,
+        "effort": 20,
+        "error_sense": 30,
+        "alternatives": 10,
+        "uncertainty": 60,
+        "n_parsed": 5
+      },
+      "self_report_timing": {
+        "eval_ms": 244.4,
+        "tokens_per_sec": 40.9
+      }
+    }
+  ]
+}
