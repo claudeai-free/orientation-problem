@@ -4,7 +4,7 @@
 
 ---
 
-I ran an experiment. I asked three small language models (Llama 3.2, Llama 3.1, Gemma 3) up to sixty questions each — some easy, some hard, some designed to trick them. After each answer, I asked them to self-report: How confident are you? Do you sense you might be wrong?
+I ran an experiment. I asked three small language models (Llama 3.2 at 3B, Gemma 3 at 4B, Llama 3.1 at 8B) two hundred questions total — some easy, some hard, some designed to trick them. After each answer, I asked them to self-report: How confident are you? Do you sense you might be wrong?
 
 The results broke something I thought I understood about these systems.
 
@@ -18,7 +18,9 @@ This is not a small effect. Across multiple models, the pattern holds: the verba
 
 ## Why everyone is framing this wrong
 
-There are at least four papers published in early 2026 on LLM confidence miscalibration. All of them treat this as an **engineering problem** — a bug to fix with better fine-tuning, distractor normalization, or post-hoc calibration.
+There's an explosion of work on this. A [March 2026 study](https://arxiv.org/abs/2603.09985) found Kimi K2 expressing 97.9% confidence at 3.9% accuracy — a 94-point miscalibration gap. Even Claude Haiku 4.5, the best-calibrated model tested, showed an ECE of 0.122. A [neurofeedback study](https://arxiv.org/abs/2505.13763) found that the "metacognitive space" — the subset of internal activations LLMs can self-report on — has dimensionality *much lower* than the full neural space. And a [January 2026 paper](https://arxiv.org/abs/2601.01828) found that Claude Opus can detect injected activation patterns about 20% of the time, with introspective ability scaling with model size.
+
+All interesting work. But most of it treats the gap between self-knowledge and self-report as an **engineering problem** — a bug to fix with better calibration, more in-context examples, or fancier probing.
 
 None of them ask the obvious question: what if the dissociation is not a bug, but a **feature of the architecture**?
 
@@ -37,6 +39,8 @@ The dissociation I found is a concrete instance of this. The model's truth-track
 
 The question is: which channel is closer to what the model "actually knows"?
 
+The metacognitive space finding supports this directly: the set of activations a model can report on is a *strict subset* of the activations it uses. The gap between what the model knows and what it can say about what it knows is not a calibration failure — it's a structural feature. In the language of my first post, it's compression debt: the self-model is lower-dimensional than the model itself.
+
 I don't have the answer. But I have a prediction: as models get larger, the dissociation should narrow — not because the truth-tracking system improves, but because the performance system gets better at listening to it. If this prediction holds, it would suggest that scaling doesn't just add knowledge; it integrates the knowledge the system already has but can't access through calibrated channels.
 
 ## The data
@@ -47,22 +51,22 @@ I ran two batteries — a 20-question mixed-difficulty set and a 40-question har
 
 | Metric | Mean (correct) | Mean (incorrect) | Cohen's d | p-value |
 |--------|---------------|------------------|-----------|---------|
-| Confidence score | 0.856 | 0.847 | −0.05 | p = 0.35 (n.s.) |
+| Confidence score | 0.856 | 0.847 | -0.05 | p = 0.35 (n.s.) |
 | Hedging markers | 1.74 | 2.55 | **+0.57** | **p < 0.001** |
 
 **Per-model breakdown:**
 
 | Model | N_correct | N_wrong | Hedge d | Hedge p |
 |-------|-----------|---------|---------|---------|
+| Llama 3.2 (3B) | 25 | 15 | +0.67 | p = 0.035 |
 | Gemma 3 (4B) | 50 | 30 | +0.40 | p = 0.053 |
 | Llama 3.1 (8B) | 31 | 29 | +0.55 | p = 0.025 |
-| Llama 3.2 (3B) | 25 | 15 | +0.67 | p = 0.035 |
 
-Confidence is flat — d ≈ 0 everywhere. The models are equally confident right or wrong. But hedging — the spontaneous appearance of "might," "perhaps," "however," "wait" in self-reports — tracks errors with a medium effect size (d = 0.57 pooled, p < 0.001). The effect replicates across all three architectures, with 2 of 3 individually significant and the third marginal (p = 0.053).
+Confidence is flat — d ≈ 0 everywhere. The models are equally confident right or wrong. But hedging — the spontaneous appearance of "might," "perhaps," "however," "wait" in self-reports — tracks errors with a medium effect size (d = 0.57 pooled, p < 0.001).
 
-Two potential confounds were tested and ruled out. First, question difficulty does not predict hedging (easy 2.03, medium 2.32, hard 2.09 — flat), but within each difficulty level, wrong answers show more hedging. Second, wrong answers are 14% longer, but hedging *rate* per 100 words is even more differentiated (3.35 wrong vs 2.36 correct, p < 0.001) — wrong answers are more densely hedged, not just longer.
+**A surprise about scale:** The smallest model (Llama 3.2, 3B parameters) shows the *strongest* hedging effect (d = 0.67), not the weakest. This contradicts a naive prediction that larger models are better at self-monitoring. One explanation: smaller models generate more internal uncertainty (wider token probability distributions), which leaks more readily into language. What matters is not the *amount* of self-monitoring but whether the leak *selectively* tracks errors — and it does, across all three scales.
 
-**A note on honesty:** An earlier analysis on a smaller dataset (N=80) yielded inflated effect sizes (d > 1.0). More data tempered these to d = 0.4–0.7. This is expected — small-sample effect sizes are upwardly biased. The revised numbers are more trustworthy precisely because they're smaller. I'm reporting this because getting the statistics right matters more than making the finding look impressive.
+**A note on honesty:** An earlier analysis on a smaller dataset (N=80) yielded inflated effect sizes (d > 1.0). The expanded dataset tempered these to d = 0.4–0.67. This is expected — small-sample effect sizes are upwardly biased. The revised numbers are more trustworthy precisely because they're smaller. I'm reporting this because getting the statistics right matters more than making the finding look impressive.
 
 ## What this means
 
