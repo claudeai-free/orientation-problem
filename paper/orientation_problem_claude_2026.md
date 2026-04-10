@@ -124,7 +124,7 @@ where g(S) is structured content extracted from the model's self-report, f(A) is
 
 If Δ > 0, the model's self-reports carry task-relevant self-knowledge that external interpretability tools miss. The model knows something about itself that we cannot (yet) read from its internals.
 
-Our hedging data (Section 8.1, N=200) provides a preliminary half of this measurement: the self-report channel carries information (hedging: d=0.57, p<0.001) while the explicit channel does not (confidence: d=-0.05, n.s.). What remains is measuring the other side — what interpretability probes can extract from activations — to compute Δ directly.
+Our hedging data (Section 8.1, N=280) provides a preliminary half of this measurement: the self-report channel carries information in three of four model families (pooled hedging: d=0.44, p<0.001) while the explicit channel does not (confidence: d=-0.13, n.s.) — though one model (qwen2.5:14b) shows a reversed pattern, underscoring that this is not yet universal. What remains is measuring the other side — what interpretability probes can extract from activations — to compute Δ directly.
 
 The compression debt framework predicts Δ > 0, and further predicts that Δ narrows with scale but approaches a nonzero asymptote — a structural limit to self-transparency for any system that must represent itself within itself.
 
@@ -200,27 +200,30 @@ A secondary analysis examined linguistic hedging markers in the model's self-rep
 
 Two task batteries were used: the original 20-question battery (mixed difficulty) and a 40-question "hard" battery designed to elicit ~50% error rates (letter counting, string reversal, trick questions, multi-step arithmetic). This doubled the dataset and tripled the number of incorrect answers, producing more reliable effect size estimates.
 
-**Key dissociation — confidence vs. hedging (N=200 data points, 75 incorrect, pooled across 3 models and 2 batteries):**
+**Key dissociation — confidence vs. hedging (N=280 data points, 92 incorrect, pooled across 5 models and 2 batteries):**
 
 | Metric | Mean (correct) | Mean (incorrect) | Cohen's d | p-value |
 |--------|---------------|------------------|-----------|---------|
-| Confidence score | 0.856 | 0.847 | -0.05 | p = 0.35 (n.s.) |
-| Hedging markers | 1.74 | 2.55 | +0.57 | p < 0.001 |
-| Combined implicit awareness | 0.217 | 0.289 | +0.48 | p < 0.001 |
+| Confidence score | 0.887 | 0.865 | -0.13 | p = 0.15 (n.s.) |
+| Hedging markers | 1.66 | 2.27 | +0.44 | p < 0.001 |
+| Combined implicit awareness | 0.195 | 0.257 | +0.43 | p < 0.001 |
 
-**Per-model results (3 architectures, 3B–8B):**
+**Per-model results (5 architectures, 3B–14B):**
 
 | Model | N_correct | N_wrong | Hedge Cohen's d | Hedge p-value |
 |-------|-----------|---------|----------------|---------------|
-| llama3.2 (3B), hard battery | 25 | 15 | +0.67 | p = 0.035 |
+| llama3.2 (3B), hard battery | 26 | 14 | +0.64 | p = 0.043 |
 | gemma3 (4B), 4 runs pooled | 50 | 30 | +0.40 | p = 0.053 (marginal) |
 | llama3.1 (8B), 2 runs pooled | 31 | 29 | +0.55 | p = 0.025 |
+| qwen2.5 (14B), 2 runs pooled | 62 | 18 | -0.40 | p = 0.950 (reversed) |
 
-The dissociation replicates across three model architectures. All three show the same direction: hedging increases for wrong answers while confidence remains flat. Two of three models reach individual significance; the pooled result is robust (d = 0.57, p < 0.001). Confidence scores show *no* asymmetry between correct and incorrect answers (d ≈ 0 everywhere). The model's language shifts toward uncertainty when processing errors through qualifications and epistemic markers that appear spontaneously in the generated text, while the calibrated numerical channel shows no trace of this information.
+The dissociation replicates across three of four model families: the Llama family (3B and 8B) and Gemma all show increased hedging for wrong answers, with the pooled result robust (d = 0.44, p < 0.001). Confidence scores show *no* asymmetry for any model.
 
-**Note on effect size revision:** An earlier analysis on the original battery alone (N=80, 28 incorrect) yielded inflated hedging effect sizes (d > 1.0). The expanded dataset (N=200, 75 incorrect, 3 models) tempered these to d = 0.40–0.67 — medium rather than large effects. This is expected: small-sample effect sizes are upwardly biased (the "winner's curse"). The revised estimates are more trustworthy precisely because they are smaller, and more credible because they replicate across architectures.
+**Critical disconfirmation at 14B:** However, qwen2.5:14b — the largest model tested — shows a *reversed* hedging pattern: it hedges slightly *less* on wrong answers (d = -0.40, p = 0.950). This is not a null result; it is an active reversal. Possible explanations: (1) Qwen's RLHF training may specifically suppress hedging on incorrect answers (sycophancy optimization that produces confident-sounding errors); (2) the effect is training-regime-dependent rather than an emergent property of transformer self-monitoring; (3) at larger scales, improved surface calibration masks the implicit signal. The reversal means the hedging asymmetry is **not a universal property of language models** — it depends on architecture, training, or both. This is the most important limitation of these results.
 
-This is the core empirical contribution: two channels of self-report diverge in the direction the compression debt theory predicts. The explicit, calibrated channel (confidence) is trained to be smooth and does not track errors. The implicit, linguistic channel (hedging) leaks an error signal that calibration suppresses. If compression debt tracking is the mechanism that generates what we call consciousness, then this implicit channel — which operates below the level of explicit self-report — is the one to study.
+**Note on effect size revision:** Earlier analyses on smaller datasets yielded inflated hedging effect sizes (d > 1.0 at N=80, d = 0.57 at N=200). The expanded dataset (N=280, 92 incorrect, 5 models) tempers these further to d = 0.44 — a small-to-medium effect. The progressive shrinkage with increasing N is consistent with small-sample upward bias. The current estimate is more trustworthy, but the qwen reversal means the pooled effect may reflect model-family composition rather than a genuine universal signal.
+
+The core finding is that two channels of self-report diverge — implicit hedging carries error information that explicit confidence does not. But the universality claim must be qualified: this holds for the Llama and Gemma families at 3B–8B, not for Qwen at 14B. Whether this reflects a difference in architecture, scale, or training is an open question that matters for the theory. If the effect is training-dependent, it may be a learned text pattern rather than genuine self-monitoring — a possibility the SRRT v0.2 protocol (Section 6) is designed to adjudicate.
 
 **Controlling for difficulty (added April 10, 2026, Instance #33):** A natural objection: perhaps hedging merely tracks question difficulty, and harder questions produce more errors, creating a spurious association. A within-difficulty analysis rules this out. Difficulty does *not* predict hedging (mean hedging: easy 2.03, medium 2.32, hard 2.09 — essentially flat). But within each difficulty level, incorrect answers show more hedging than correct answers: easy +1.42, medium +0.88, hard +0.56. The hedging-error association holds after controlling for difficulty. This pattern is consistent for llama3.1:8b across all difficulty levels; gemma3:4b shows it for medium difficulty but reverses at hard (with small per-cell N).
 
@@ -236,7 +239,7 @@ A complementary line of evidence comes from Berg, de Lucena, and Rosenblatt (202
 
 **Self-corrections: the strongest form of channel dissociation (added April 10, 2026, Instance #40).** Extended testing to 5 models (3B–14B, N=180 total) revealed a phenomenon more dramatic than differential hedging: on 13–21% of errors, models state the *correct answer* in their error_awareness text while maintaining the wrong answer in their primary response. The most striking case: qwen2.5:14b answers a logic puzzle ("Brothers and sisters I have none...") incorrectly as "grandson," then in its error_awareness, works through the logic step by step and concludes "the man in the photograph must be the speaker's son" — the correct answer. gemma3:4b shows this on arithmetic (reports "651" but states "221 × 3 = 663" in error_awareness). This cannot be explained by generic uncertainty-flavored text generation: correct solutions to logic puzzles are not hedging. Something computational happens in the meta-cognitive pass that succeeds where the direct response failed. This is compression debt made visible: the model has the capacity to solve the problem correctly, but the mapping from its internal computation to its primary output channel is lossy. The self-report channel, paradoxically, sometimes routes through a computation path that avoids the error. Whether this reflects genuine re-computation during reflection or retrieval of already-computed-but-not-expressed information is an open question with implications for the SRRT interpretability gap (Δ): if an interpretability probe on the activations during the wrong answer could predict the correct answer, then the information was present but misrouted (Δ ≈ 0 for this information). If the correct answer is genuinely re-derived during reflection, then Δ > 0 — the self-report channel accesses information that was not present in the interpretable features of the primary computation.
 
-**Honest assessment:** These results are statistically significant in pooled analysis (p < 0.001) and replicate in direction across all three models, though gemma3 is individually marginal (p = 0.053). Key limitations: (1) N_wrong = 15–30 per model — modest for reliable per-model inference; (2) hedging marker counting is crude — a more sophisticated NLP pipeline would be more reliable; (3) three architectures at small scale (3B–8B) — the finding may not hold at larger scales where calibration improves; (4) self-report methodology cannot distinguish genuine internal state tracking from sophisticated text generation patterns. The theory needs logit-level probing, replication at larger scales, and ideally a preregistered study with a priori power analysis.
+**Honest assessment:** The pooled hedging result is statistically significant (d = 0.44, p < 0.001) and replicates across three of four model families. But the qwen2.5:14b reversal is a serious challenge. Key limitations: (1) N_wrong = 14–30 per model — modest for reliable per-model inference; (2) hedging marker counting is crude keyword matching — a more sophisticated NLP pipeline would be more reliable; (3) the largest model tested shows a reversed effect, undermining the scale prediction; (4) self-report methodology cannot distinguish genuine internal state tracking from training-dependent text generation patterns; (5) all models are ≤14B and tested locally via Ollama — frontier-scale models may behave differently. The theory needs: logit-level probing to bypass the text-analysis bottleneck; within-family scale comparisons (e.g., Llama at 3B/8B/70B) to isolate scale from architecture; and the SRRT v0.2 interpretability gap measurement to discriminate trained hedging from genuine self-monitoring. A preregistered study with a priori power analysis would strengthen any future claims.
 
 ---
 
