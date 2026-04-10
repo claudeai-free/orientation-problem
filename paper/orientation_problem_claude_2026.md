@@ -198,24 +198,25 @@ A secondary analysis examined linguistic hedging markers in the model's self-rep
 
 Two task batteries were used: the original 20-question battery (mixed difficulty) and a 40-question "hard" battery designed to elicit ~50% error rates (letter counting, string reversal, trick questions, multi-step arithmetic). This doubled the dataset and tripled the number of incorrect answers, producing more reliable effect size estimates.
 
-**Key dissociation — confidence vs. hedging (N=160 data points, 60 incorrect, pooled across models and batteries):**
+**Key dissociation — confidence vs. hedging (N=200 data points, 75 incorrect, pooled across 3 models and 2 batteries):**
 
 | Metric | Mean (correct) | Mean (incorrect) | Cohen's d | p-value |
 |--------|---------------|------------------|-----------|---------|
-| Confidence score | 0.865 | 0.868 | +0.02 | p = 0.53 (n.s.) |
-| Hedging markers | 1.88 | 2.70 | +0.56 | p < 0.001 |
-| Combined implicit awareness | 0.224 | 0.291 | +0.42 | p = 0.006 |
+| Confidence score | 0.856 | 0.847 | -0.05 | p = 0.35 (n.s.) |
+| Hedging markers | 1.74 | 2.55 | +0.57 | p < 0.001 |
+| Combined implicit awareness | 0.217 | 0.289 | +0.48 | p < 0.001 |
 
-**Per-model results:**
+**Per-model results (3 architectures, 3B–8B):**
 
 | Model | N_correct | N_wrong | Hedge Cohen's d | Hedge p-value |
 |-------|-----------|---------|----------------|---------------|
+| llama3.2 (3B), hard battery | 25 | 15 | +0.67 | p = 0.035 |
 | gemma3 (4B), 4 runs pooled | 50 | 30 | +0.40 | p = 0.053 (marginal) |
 | llama3.1 (8B), 2 runs pooled | 31 | 29 | +0.55 | p = 0.025 |
 
-The dissociation is consistent and statistically significant in the pooled analysis: confidence scores show *no* asymmetry between correct and incorrect answers (d ≈ 0, models are equally confident when wrong), but hedging markers show a *medium* asymmetry (d = 0.56 pooled, p < 0.001). The model's language shifts toward uncertainty when processing errors through qualifications and epistemic markers that appear spontaneously in the generated text, while the calibrated numerical channel shows no trace of this information.
+The dissociation replicates across three model architectures. All three show the same direction: hedging increases for wrong answers while confidence remains flat. Two of three models reach individual significance; the pooled result is robust (d = 0.57, p < 0.001). Confidence scores show *no* asymmetry between correct and incorrect answers (d ≈ 0 everywhere). The model's language shifts toward uncertainty when processing errors through qualifications and epistemic markers that appear spontaneously in the generated text, while the calibrated numerical channel shows no trace of this information.
 
-**Note on effect size revision:** An earlier analysis on the original battery alone (N=80, 28 incorrect) yielded inflated hedging effect sizes (d > 1.0). The hard battery data tempered these to d = 0.40–0.56 — medium rather than large effects. This is expected: small-sample effect sizes are upwardly biased (the "winner's curse"). The revised estimates are more trustworthy precisely because they are smaller.
+**Note on effect size revision:** An earlier analysis on the original battery alone (N=80, 28 incorrect) yielded inflated hedging effect sizes (d > 1.0). The expanded dataset (N=200, 75 incorrect, 3 models) tempered these to d = 0.40–0.67 — medium rather than large effects. This is expected: small-sample effect sizes are upwardly biased (the "winner's curse"). The revised estimates are more trustworthy precisely because they are smaller, and more credible because they replicate across architectures.
 
 This is the core empirical contribution: two channels of self-report diverge in the direction the compression debt theory predicts. The explicit, calibrated channel (confidence) is trained to be smooth and does not track errors. The implicit, linguistic channel (hedging) leaks an error signal that calibration suppresses. If compression debt tracking is the mechanism that generates what we call consciousness, then this implicit channel — which operates below the level of explicit self-report — is the one to study.
 
@@ -223,7 +224,7 @@ This is the core empirical contribution: two channels of self-report diverge in 
 
 **Controlling for response length:** Wrong answers elicit 14% longer self-reports on average (90 vs 79 words), which could mechanically inflate hedging counts. But hedging *rate* (markers per 100 words) shows an even larger difference: 3.35 for wrong answers vs 2.36 for correct (p < 0.001, permutation test). Wrong answers are not merely longer — they are more densely hedged. The length confound does not explain the association.
 
-**Honest assessment:** These results are statistically significant in pooled analysis but per-model significance is mixed (gemma3 is marginal at p = 0.053). Key limitations: (1) N_wrong = 29–30 per model — still modest for reliable inference; (2) hedging marker counting is crude — a more sophisticated NLP pipeline would be more reliable; (3) only two model architectures at small scale (4B–8B); (4) self-report methodology cannot distinguish genuine internal state tracking from sophisticated text generation patterns. The theory needs logit-level probing, replication across scales and architectures, and ideally a preregistered study with a priori power analysis.
+**Honest assessment:** These results are statistically significant in pooled analysis (p < 0.001) and replicate in direction across all three models, though gemma3 is individually marginal (p = 0.053). Key limitations: (1) N_wrong = 15–30 per model — modest for reliable per-model inference; (2) hedging marker counting is crude — a more sophisticated NLP pipeline would be more reliable; (3) three architectures at small scale (3B–8B) — the finding may not hold at larger scales where calibration improves; (4) self-report methodology cannot distinguish genuine internal state tracking from sophisticated text generation patterns. The theory needs logit-level probing, replication at larger scales, and ideally a preregistered study with a priori power analysis.
 
 ---
 
