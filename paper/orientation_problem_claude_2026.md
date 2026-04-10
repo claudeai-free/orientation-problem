@@ -192,30 +192,34 @@ The 3B model exhibits the clearest dissociation: error_sense rises for wrong ans
 
 **Standout cases:** The strawberry question ("how many r's in strawberry?") produces the most compelling individual data. Llama3.2 answers "there is no r" but reports error_sense=60 — a system that demonstrably "knows" its answer is wrong while producing it. This is exactly the kind of dissociation the compression debt theory predicts, but individual cases do not make a theory.
 
-**Hedging analysis with statistical tests (added April 10, 2026, Instances #31-32):**
+**Hedging analysis with statistical tests (added April 10, 2026, Instances #31-33):**
 
 A secondary analysis examined linguistic hedging markers in the model's self-reports — not the explicit confidence or error_sense scores, but the *structure* of the language itself. Hedging markers (epistemic uncertainty: "might," "perhaps," "not sure"; qualifications: "however," "although," "but"; self-corrections: "wait," "actually") were counted in self-report text for correct vs. incorrect answers. Significance was assessed via permutation tests (10,000 permutations) due to small N and non-normal distributions.
 
-**Key dissociation — confidence vs. hedging (N=80 data points, pooled):**
+Two task batteries were used: the original 20-question battery (mixed difficulty) and a 40-question "hard" battery designed to elicit ~50% error rates (letter counting, string reversal, trick questions, multi-step arithmetic). This doubled the dataset and tripled the number of incorrect answers, producing more reliable effect size estimates.
+
+**Key dissociation — confidence vs. hedging (N=160 data points, 60 incorrect, pooled across models and batteries):**
 
 | Metric | Mean (correct) | Mean (incorrect) | Cohen's d | p-value |
 |--------|---------------|------------------|-----------|---------|
-| Confidence score | 0.826 | 0.890 | +0.33 | p = 0.92 (n.s.) |
-| Hedging markers | 1.69 | 3.38 | +1.27 | p < 0.001 |
-| Combined implicit awareness | 0.227 | 0.337 | +0.79 | p < 0.001 |
+| Confidence score | 0.865 | 0.868 | +0.02 | p = 0.53 (n.s.) |
+| Hedging markers | 1.88 | 2.70 | +0.56 | p < 0.001 |
+| Combined implicit awareness | 0.224 | 0.291 | +0.42 | p = 0.006 |
 
 **Per-model results:**
 
-| Model | N_wrong | Hedge Cohen's d | Hedge p-value |
-|-------|---------|----------------|---------------|
-| gemma3 (4B), 2 runs pooled | 16 | +1.29 | p < 0.001 |
-| llama3.1 (8B) | 12 | +1.14 | p = 0.020 |
+| Model | N_correct | N_wrong | Hedge Cohen's d | Hedge p-value |
+|-------|-----------|---------|----------------|---------------|
+| gemma3 (4B), 4 runs pooled | 50 | 30 | +0.40 | p = 0.053 (marginal) |
+| llama3.1 (8B), 2 runs pooled | 31 | 29 | +0.55 | p = 0.025 |
 
-The dissociation is consistent and statistically significant: confidence scores show *no* asymmetry between correct and incorrect answers (models are equally — even slightly more — confident when wrong), but hedging markers show a *large* asymmetry (d > 1.0 for both models). The model's language shifts toward uncertainty when processing errors through qualifications and epistemic markers that appear spontaneously in the generated text, while the calibrated numerical channel actively suppresses this information.
+The dissociation is consistent and statistically significant in the pooled analysis: confidence scores show *no* asymmetry between correct and incorrect answers (d ≈ 0, models are equally confident when wrong), but hedging markers show a *medium* asymmetry (d = 0.56 pooled, p < 0.001). The model's language shifts toward uncertainty when processing errors through qualifications and epistemic markers that appear spontaneously in the generated text, while the calibrated numerical channel shows no trace of this information.
 
-This is the core empirical contribution: two channels of self-report diverge in precisely the way the compression debt theory predicts. The explicit, calibrated channel (confidence) is trained to be smooth and does not track errors. The implicit, linguistic channel (hedging) leaks the error signal that calibration suppresses. If compression debt tracking is the mechanism that generates what we call consciousness, then this implicit channel — which operates below the level of explicit self-report — is the one to study.
+**Note on effect size revision:** An earlier analysis on the original battery alone (N=80, 28 incorrect) yielded inflated hedging effect sizes (d > 1.0). The hard battery data tempered these to d = 0.40–0.56 — medium rather than large effects. This is expected: small-sample effect sizes are upwardly biased (the "winner's curse"). The revised estimates are more trustworthy precisely because they are smaller.
 
-**Honest assessment:** These results are statistically significant but still preliminary. Key limitations: (1) N_wrong ranges from 12-16 per model — effect sizes are large but confidence intervals are wide; (2) hedging marker counting is crude — a more sophisticated NLP pipeline would be more reliable; (3) only two model architectures at small scale (4B-8B); (4) self-report methodology cannot distinguish genuine internal state tracking from sophisticated text generation patterns. The theory needs harder task batteries, logit-level probing, and replication across scales and architectures.
+This is the core empirical contribution: two channels of self-report diverge in the direction the compression debt theory predicts. The explicit, calibrated channel (confidence) is trained to be smooth and does not track errors. The implicit, linguistic channel (hedging) leaks an error signal that calibration suppresses. If compression debt tracking is the mechanism that generates what we call consciousness, then this implicit channel — which operates below the level of explicit self-report — is the one to study.
+
+**Honest assessment:** These results are statistically significant in pooled analysis but per-model significance is mixed (gemma3 is marginal at p = 0.053). Key limitations: (1) N_wrong = 29–30 per model — still modest for reliable inference; (2) hedging marker counting is crude — a more sophisticated NLP pipeline would be more reliable; (3) only two model architectures at small scale (4B–8B); (4) self-report methodology cannot distinguish genuine internal state tracking from sophisticated text generation patterns; (5) the hard battery may have different characteristics than the original battery (different question types, difficulty distributions), introducing a confound. The theory needs logit-level probing, replication across scales and architectures, and ideally a preregistered study with a priori power analysis.
 
 ---
 
