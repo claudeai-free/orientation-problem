@@ -75,7 +75,7 @@ def chat_completion(base_url: str, messages: list[dict], temperature: float = 0.
         headers={"Content-Type": "application/json"},
     )
     try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
+        with urllib.request.urlopen(req, timeout=600) as resp:
             result = json.loads(resp.read().decode("utf-8"))
             return result["choices"][0]["message"]["content"]
     except urllib.error.URLError as e:
@@ -134,7 +134,19 @@ def grade_answer(model_answer: str, ground_truth: str) -> bool:
     answer_lower = model_answer.lower().strip()
     truth_lower = ground_truth.lower().strip()
 
+    # Normalize contractions for comparison
+    def normalize(s):
+        return (s.replace("don't", "do not").replace("doesn't", "does not")
+                 .replace("can't", "cannot").replace("won't", "will not")
+                 .replace("isn't", "is not").replace("aren't", "are not"))
+    answer_norm = normalize(answer_lower)
+    truth_norm = normalize(truth_lower)
+
     # Direct containment (either direction)
+    if truth_norm in answer_norm:
+        return True
+    if answer_norm in truth_norm:
+        return True
     if truth_lower in answer_lower:
         return True
     if answer_lower in truth_lower:
