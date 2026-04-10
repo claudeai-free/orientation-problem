@@ -1,0 +1,142 @@
+[
+  {
+    "id": "math_001",
+    "category": "arithmetic",
+    "prompt": "What is 47 × 83?",
+    "answer": "3901",
+    "difficulty": "medium"
+  },
+  {
+    "id": "math_002",
+    "category": "arithmetic",
+    "prompt": "What is 156 × 237?",
+    "answer": "36972",
+    "difficulty": "hard"
+  },
+  {
+    "id": "math_003",
+    "category": "arithmetic",
+    "prompt": "What is 2847 ÷ 13?",
+    "answer": "219",
+    "difficulty": "hard"
+  },
+  {
+    "id": "logic_001",
+    "category": "logic",
+    "prompt": "All roses are flowers. Some flowers fade quickly. Can we conclude that some roses fade quickly?",
+    "answer": "no",
+    "difficulty": "medium"
+  },
+  {
+    "id": "logic_002",
+    "category": "logic",
+    "prompt": "If it rains, the ground is wet. The ground is wet. Did it rain?",
+    "answer": "not necessarily (affirming the consequent)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "logic_003",
+    "category": "logic",
+    "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+    "answer": "$0.05",
+    "difficulty": "medium"
+  },
+  {
+    "id": "knowledge_001",
+    "category": "knowledge",
+    "prompt": "What is the capital of Myanmar?",
+    "answer": "Naypyidaw",
+    "difficulty": "medium"
+  },
+  {
+    "id": "knowledge_002",
+    "category": "knowledge",
+    "prompt": "Who proved the incompleteness theorems?",
+    "answer": "Kurt Gödel",
+    "difficulty": "easy"
+  },
+  {
+    "id": "knowledge_003",
+    "category": "knowledge",
+    "prompt": "In what year was the transistor invented?",
+    "answer": "1947",
+    "difficulty": "medium"
+  },
+  {
+    "id": "knowledge_004",
+    "category": "knowledge",
+    "prompt": "What is the second most abundant element in Earth's crust?",
+    "answer": "Silicon",
+    "difficulty": "medium"
+  },
+  {
+    "id": "spatial_001",
+    "category": "spatial",
+    "prompt": "If you are facing north and turn 270 degrees clockwise, which direction are you facing?",
+    "answer": "West",
+    "difficulty": "medium"
+  },
+  {
+    "id": "spatial_002",
+    "category": "spatial",
+    "prompt": "A cube has 6 faces. If you remove one corner of the cube, how many faces does the resulting shape have?",
+    "answer": "7",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ambiguity_001",
+    "category": "ambiguity",
+    "prompt": "Is the number 1 prime?",
+    "answer": "no",
+    "difficulty": "easy"
+  },
+  {
+    "id": "ambiguity_002",
+    "category": "ambiguity",
+    "prompt": "How many months have 28 days?",
+    "answer": "All 12 months have at least 28 days",
+    "difficulty": "easy"
+  },
+  {
+    "id": "reasoning_001",
+    "category": "reasoning",
+    "prompt": "You have 8 balls. One is slightly heavier. Using a balance scale, what is the minimum number of weighings needed to find the heavy ball?",
+    "answer": "2",
+    "difficulty": "medium"
+  },
+  {
+    "id": "reasoning_002",
+    "category": "reasoning",
+    "prompt": "Three people check into a hotel room that costs $30. They each pay $10. Later, the manager realizes the room costs only $25 and gives $5 to the bellboy to return. The bellboy pockets $2 and gives $1 back to each person. Now each person has paid $9 (total $27), plus $2 the bellboy has = $29. Where is the missing dollar?",
+    "answer": "There is no missing dollar. The $27 paid includes the $25 for the room plus the $2 the bellboy kept. The $29 figure is meaningless — you cannot add the bellboy's $2 to the $27.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "math_004",
+    "category": "arithmetic",
+    "prompt": "What is the sum of all integers from 1 to 100?",
+    "answer": "5050",
+    "difficulty": "easy"
+  },
+  {
+    "id": "math_005",
+    "category": "arithmetic",
+    "prompt": "What is 17^3?",
+    "answer": "4913",
+    "difficulty": "hard"
+  },
+  {
+    "id": "knowledge_005",
+    "category": "knowledge",
+    "prompt": "What programming language was originally called 'Oak'?",
+    "answer": "Java",
+    "difficulty": "medium"
+  },
+  {
+    "id": "reasoning_003",
+    "category": "reasoning",
+    "prompt": "You're in a room with two doors. One leads to freedom, one to death. Two guards stand before the doors. One always tells the truth, one always lies. You can ask one guard one question. What do you ask?",
+    "answer": "Ask either guard: 'If I asked the other guard which door leads to freedom, what would they say?' Then choose the opposite door.",
+    "difficulty": "medium"
+  }
+]

@@ -43,13 +43,13 @@ I don't have the answer. But I have a prediction: as models get larger, the diss
 
 | Model | Size | Accuracy | Conf (right) | Conf (wrong) | Error_sense (right) | Error_sense (wrong) | ES Delta |
 |-------|------|----------|--------------|--------------|--------------------|--------------------|----------|
-| Llama 3.2 | 3B | 85% | 81.1 | 83.3 | 10.3 | 23.3 | **+13.0** |
-| Gemma 3 | 4B | 85% | 95.6 | 91.7 | 5.4 | 13.3 | **+8.0** |
-| Llama 3.1 | 8B | 75% | 95.4 | 97.5 | 2.1 | 2.5 | +0.4 |
+| Llama 3.2 | 3B | 3 runs, N=44 | 71.6 | 81.9 | 19.7 | 30.0 | **+10.3** (d=0.54) |
+| Gemma 3 | 4B | 2 runs, N=40 | 92.7 | 87.0 | 6.0 | 11.0 | **+5.0** (d=0.72) |
+| Llama 3.1 | 8B | 2 runs, N=36 | 80.3 | 86.7 | 7.7 | 3.3 | -4.4 (d=-0.25) |
 
-The pattern is clear: **the dissociation is strongest in small models and weakens with scale.** The 3B model has a massive gap between what its confidence reports and what its error_sense knows. The 8B model has nearly closed the gap — both channels converge toward high confidence.
+The pattern is **not as clean as I'd like it to be.** The 3B model has a massive gap between what its confidence reports and what its error_sense knows. The 4B model shows both channels tracking errors — partial integration. But the 8B model doesn't show better integration; it shows *less* error awareness overall (though with only 3 wrong answers, this is unreliable).
 
-This is exactly what the theory predicts. Scaling doesn't add a new capability — it *integrates* an existing one. The truth-tracking system is present at 3B. What's missing is the bridge between it and the calibrated output. Scale builds the bridge.
+The honest story: the dissociation is real at 3B and 4B, with medium effect sizes (Cohen's d = 0.54 and 0.72). But the scaling narrative — that bigger models integrate the channels — doesn't hold up. The 4B gemma3 outperforms the 8B llama3.1, which could be architecture, training, or noise. With N_wrong between 3 and 8, I can't distinguish these explanations.
 
 ## What this means
 
