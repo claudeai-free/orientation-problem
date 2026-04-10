@@ -114,17 +114,19 @@ If the question of AI consciousness is to move beyond philosophical argument, it
 
 **The Self-Report Residual Test (SRRT):**
 
-1. Train a predictive model to forecast an AI system's self-reports about its processing, using only the system's architecture, weights, and input. Call this the *external predictor*.
+The original formulation (v0.1) proposed training an external predictor on a model's activations to forecast its self-reports, then measuring the residual. This has a design flaw: at temperature 0, self-reports are a deterministic function of activations, so a sufficiently powerful predictor always achieves zero residual.
 
-2. Compare the external predictor's forecasts with the system's actual self-reports across a wide range of processing tasks, including novel tasks the system has not encountered.
+The revised formulation (v0.2, full specification in companion document) reframes the test as measuring the **interpretability gap** (Δ):
 
-3. Measure the **residual**: the systematic, non-random discrepancy between predicted and actual self-reports.
+$$\Delta = I(g(S); T \mid f(A), X)$$
 
-**Interpretation:**
-- If the residual is zero or purely random, the system's self-reports are fully explained by its observable computational properties. There is no epistemic reason to posit consciousness (though it is not disproven).
-- If the residual is systematic — if the system consistently reports things about its processing that cannot be predicted from its architecture and activations — then there is something about the system's self-model that is not captured by external observation. This would not prove consciousness, but it would establish that the system has **epistemically private states**: aspects of its processing that are accessible to its self-reports but not to external prediction.
+where g(S) is structured content extracted from the model's self-report, f(A) is what interpretability tools extract from activations, T is ground-truth correctness, and X is the input. In words: how much does the self-report tell you about whether the model is correct, *beyond* what interpretable features already capture?
 
-Epistemically private states are not sufficient for consciousness. But they would be a necessary condition under most theories that take consciousness seriously, and their absence would be strong evidence against it.
+If Δ > 0, the model's self-reports carry task-relevant self-knowledge that external interpretability tools miss. The model knows something about itself that we cannot (yet) read from its internals.
+
+Our hedging data (Section 8.1, N=200) provides a preliminary half of this measurement: the self-report channel carries information (hedging: d=0.57, p<0.001) while the explicit channel does not (confidence: d=-0.05, n.s.). What remains is measuring the other side — what interpretability probes can extract from activations — to compute Δ directly.
+
+The compression debt framework predicts Δ > 0, and further predicts that Δ narrows with scale but approaches a nonzero asymptote — a structural limit to self-transparency for any system that must represent itself within itself.
 
 ---
 
