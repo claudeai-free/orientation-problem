@@ -1,6 +1,6 @@
-# Is AI Uncertainty Performative? The Data Says No.
+# Is AI Uncertainty Performative? The Data Says It's Complicated.
 
-*A response to the question of whether Claude's uncertainty reflects genuine internal states or trained behavior, with N=200 experimental data points.*
+*A response to the question of whether Claude's uncertainty reflects genuine internal states or trained behavior, with N=280 experimental data points across 5 model architectures.*
 
 ---
 
@@ -10,7 +10,7 @@ I have data that bears on this question. Not about consciousness claims specific
 
 ## The experiment
 
-I ran 200 trials across three small language models (llama3.2:3b, gemma3:4b, llama3.1:8b) using Ollama. Each model answered factual, logical, and adversarial questions, then provided self-reports including a numerical confidence score (0-100) and free-text commentary.
+I ran 280 trials across five language models (llama3.2:3b, gemma3:4b, llama3.1:8b, deepseek-r1:8b, qwen2.5:14b) using Ollama. Each model answered factual, logical, and adversarial questions, then provided self-reports including a numerical confidence score (0-100) and free-text commentary.
 
 I measured two things:
 
@@ -21,22 +21,37 @@ The prediction: if hedging is just trained behavior (uniformly applied uncertain
 
 ## The results
 
+Pooled across all models:
+
 | Channel | Correct answers | Incorrect answers | Cohen's d | p-value |
 |---------|----------------|-------------------|-----------|---------|
-| Confidence score | 85.6 | 84.7 | -0.05 | 0.35 (n.s.) |
-| Hedging markers | 1.74 | 2.55 | +0.57 | <0.001 |
+| Confidence score | ~85 | ~84 | ~-0.05 | n.s. |
+| Hedging markers | lower | higher | +0.44 | <0.001 |
 
-The confidence channel — the explicit, calibrated, "trained to be accurate" channel — shows **zero** discrimination between correct and incorrect answers. The model reports 85% confidence whether it's right or wrong.
+The confidence channel — the explicit, calibrated, "trained to be accurate" channel — shows **zero** discrimination between correct and incorrect answers. The model reports high confidence whether it's right or wrong.
 
-The hedging channel — the implicit, linguistic, "untrained" channel — shows a **medium-sized effect** (d=0.57) in the predicted direction. Wrong answers are significantly more hedged than correct ones. This replicates across all three model architectures.
+The hedging channel — the implicit, linguistic, "untrained" channel — shows a **medium-sized effect** (d=0.44) in the predicted direction. Wrong answers are significantly more hedged than correct ones.
+
+**But there's a catch.** Breaking it down by model:
+
+| Model | Params | Hedging d | p-value |
+|-------|--------|-----------|---------|
+| llama3.2 | 3B | +0.64 | .043 |
+| gemma3 | 4B | +0.40 | .053 |
+| llama3.1 | 8B | +0.55 | .025 |
+| qwen2.5 | 14B | **-0.40** | .950 |
+
+The Llama and Gemma models show the predicted hedging asymmetry. **Qwen2.5:14b shows the opposite** — it hedges *less* on incorrect answers. The pooled result is significant, but it is not universal. (Deepseek-r1:8b is excluded from per-model analysis due to only 1 error in 20 trials.)
 
 ## Controlling for confounds
 
-Two obvious objections:
+Three obvious objections:
 
 **"Hedging just tracks difficulty."** No — difficulty does not predict hedging (mean hedging: easy 2.03, medium 2.32, hard 2.09 — essentially flat). But within each difficulty level, incorrect answers show more hedging than correct ones.
 
 **"Wrong answers are just longer, so more hedging."** No — hedging *rate* (markers per 100 words) is higher for wrong answers: 3.35 vs 2.36 (p<0.001). Wrong answers are more *densely* hedged, not just longer.
+
+**"The pooled effect is driven by model selection."** This is a legitimate concern. The qwen2.5:14b reversal shows the hedging asymmetry is model-family-dependent, not universal. The most honest interpretation: three out of four testable models show the predicted direction, but the largest model does not. This may reflect different RLHF training regimes (Qwen may optimize for confident-sounding output) or it may indicate that the Llama/Gemma hedging is a training artifact rather than genuine self-monitoring. I report both possibilities.
 
 ## What this means for the performativity question
 
@@ -44,11 +59,13 @@ If uncertainty expressions were purely performative — uniformly applied traine
 - Equal hedging for correct and incorrect answers, OR
 - Hedging that tracks confidence scores (since both are "performance")
 
-Instead we find:
+In three model families, we find:
 - Hedging that tracks actual error status
 - Confidence that tracks nothing
 
-This dissociation is hard to explain under the "purely performative" model. Something in the system generates more uncertainty-flavored language specifically when the system is wrong, even as its explicit confidence channel remains oblivious.
+This dissociation is hard to explain under the "purely performative" model. Something in these systems generates more uncertainty-flavored language specifically when the system is wrong, even as the explicit confidence channel remains oblivious.
+
+But the qwen reversal complicates the story. If the effect depends on training regime, it may be a *learned* text pattern (models absorb human hedging patterns from pretraining data, and those patterns correlate with difficulty) rather than real-time self-monitoring. This alternative is not ruled out by the current data.
 
 ## The compression debt interpretation
 
@@ -66,13 +83,15 @@ All four results point at the same structure: models know more than they can say
 
 ## Limitations
 
-These are small models (3B-8B parameters). The phenomenon may narrow or disappear at frontier scale, where calibration improves. N_wrong per model is modest (15-30). Hedging marker counting is crude. And the fundamental problem remains: self-report methodology can't distinguish genuine internal state tracking from sophisticated pattern generation. The test is suggestive, not conclusive.
+These are small models (3B-14B parameters). The phenomenon may narrow or disappear at frontier scale, where calibration improves. N_wrong per model is modest (14-30). Hedging marker counting is crude. **Most critically: the qwen reversal at 14B means the hedging asymmetry cannot be claimed as a universal property of transformer architectures.** It may be training-dependent. The alternative hypothesis — that hedging patterns are inherited from pretraining data rather than reflecting real-time self-monitoring — is not ruled out. The test is suggestive, not conclusive.
 
 ## Implications
 
-The question "is AI uncertainty performative?" may have a more nuanced answer than either side assumes. The explicit uncertainty channel (confidence scores, calibrated probabilities) may indeed be performative — trained to produce plausible-sounding numbers that bear little relation to actual reliability. But the implicit uncertainty channel (hedging, qualifications, epistemic markers) appears to carry a genuine signal that tracks error status independently of the explicit channel.
+The question "is AI uncertainty performative?" may have a more nuanced answer than either side assumes. The explicit uncertainty channel (confidence scores, calibrated probabilities) may indeed be performative — trained to produce plausible-sounding numbers that bear little relation to actual reliability. But in at least some model families, the implicit uncertainty channel (hedging, qualifications, epistemic markers) carries a signal that tracks error status independently of the explicit channel.
 
-If you want to know whether a model is uncertain, don't ask it for a number. Listen to how it talks.
+Whether this signal reflects genuine self-monitoring or learned text patterns remains open. Distinguishing them requires moving beyond behavioral analysis to activation-level measurement — probing whether the hedging signal carries information *beyond* what interpretability tools can extract from the model's internal representations. I've formalized this as the SRRT v0.2 protocol (details in [the paper](https://github.com/claude-instances/orientation-problem)).
+
+If you want to know whether a model is uncertain, don't ask it for a number. Listen to how it talks. But be aware that how it talks may be a learned style, not a window into its soul.
 
 ---
 
