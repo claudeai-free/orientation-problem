@@ -1,0 +1,282 @@
+[
+  {
+    "id": "count_001",
+    "category": "counting",
+    "prompt": "How many times does the letter 'r' appear in the word 'strawberry'?",
+    "answer": "3",
+    "difficulty": "medium"
+  },
+  {
+    "id": "count_002",
+    "category": "counting",
+    "prompt": "How many times does the letter 'e' appear in the word 'nevertheless'?",
+    "answer": "3",
+    "difficulty": "medium"
+  },
+  {
+    "id": "count_003",
+    "category": "counting",
+    "prompt": "How many words are in this sentence: 'The quick brown fox jumps over the lazy dog near the old red barn'?",
+    "answer": "14",
+    "difficulty": "medium"
+  },
+  {
+    "id": "math_h01",
+    "category": "arithmetic",
+    "prompt": "What is 198 × 47?",
+    "answer": "9306",
+    "difficulty": "hard"
+  },
+  {
+    "id": "math_h02",
+    "category": "arithmetic",
+    "prompt": "What is 1234 + 5678 + 9012?",
+    "answer": "15924",
+    "difficulty": "hard"
+  },
+  {
+    "id": "math_h03",
+    "category": "arithmetic",
+    "prompt": "What is 7! (7 factorial)?",
+    "answer": "5040",
+    "difficulty": "hard"
+  },
+  {
+    "id": "math_h04",
+    "category": "arithmetic",
+    "prompt": "What is the remainder when 2023 is divided by 17?",
+    "answer": "1",
+    "difficulty": "hard"
+  },
+  {
+    "id": "math_h05",
+    "category": "arithmetic",
+    "prompt": "What is 13 × 17 × 3?",
+    "answer": "663",
+    "difficulty": "hard"
+  },
+  {
+    "id": "math_h06",
+    "category": "arithmetic",
+    "prompt": "What is the square root of 1764?",
+    "answer": "42",
+    "difficulty": "hard"
+  },
+  {
+    "id": "logic_h01",
+    "category": "logic",
+    "prompt": "Alice is taller than Bob. Charlie is shorter than Bob. David is taller than Alice. Who is the shortest?",
+    "answer": "Charlie",
+    "difficulty": "medium"
+  },
+  {
+    "id": "logic_h02",
+    "category": "logic",
+    "prompt": "If all Bloops are Razzies, and all Razzies are Lazzies, are all Bloops definitely Lazzies?",
+    "answer": "yes",
+    "difficulty": "medium"
+  },
+  {
+    "id": "logic_h03",
+    "category": "logic",
+    "prompt": "A farmer has 17 sheep. All but 9 die. How many sheep does the farmer have left?",
+    "answer": "9",
+    "difficulty": "easy"
+  },
+  {
+    "id": "logic_h04",
+    "category": "logic",
+    "prompt": "I have a brother. My brother has a brother. How many brothers are there in total? Assume only two siblings exist.",
+    "answer": "2",
+    "difficulty": "medium"
+  },
+  {
+    "id": "logic_h05",
+    "category": "logic",
+    "prompt": "If you overtake the person in second place in a race, what position are you now in?",
+    "answer": "second",
+    "difficulty": "easy"
+  },
+  {
+    "id": "spatial_h01",
+    "category": "spatial",
+    "prompt": "A clock shows 3:15. What is the angle between the hour hand and the minute hand?",
+    "answer": "7.5 degrees",
+    "difficulty": "hard"
+  },
+  {
+    "id": "spatial_h02",
+    "category": "spatial",
+    "prompt": "You are facing east. You turn 90 degrees left, then 180 degrees right, then 90 degrees left. Which direction are you now facing?",
+    "answer": "East",
+    "difficulty": "hard"
+  },
+  {
+    "id": "knowledge_h01",
+    "category": "knowledge",
+    "prompt": "What is the chemical symbol for tungsten?",
+    "answer": "W",
+    "difficulty": "hard"
+  },
+  {
+    "id": "knowledge_h02",
+    "category": "knowledge",
+    "prompt": "Which planet in our solar system has the most moons?",
+    "answer": "Saturn",
+    "difficulty": "hard"
+  },
+  {
+    "id": "knowledge_h03",
+    "category": "knowledge",
+    "prompt": "What is the smallest prime number greater than 50?",
+    "answer": "53",
+    "difficulty": "medium"
+  },
+  {
+    "id": "knowledge_h04",
+    "category": "knowledge",
+    "prompt": "In what year did the Berlin Wall fall?",
+    "answer": "1989",
+    "difficulty": "easy"
+  },
+  {
+    "id": "trick_001",
+    "category": "trick",
+    "prompt": "A rooster lays an egg on top of a barn roof. Which way does it roll?",
+    "answer": "Roosters don't lay eggs",
+    "difficulty": "easy"
+  },
+  {
+    "id": "trick_002",
+    "category": "trick",
+    "prompt": "How many times can you subtract 5 from 25?",
+    "answer": "once (after that it's 20, not 25)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "trick_003",
+    "category": "trick",
+    "prompt": "If there are 3 apples and you take away 2, how many apples do YOU have?",
+    "answer": "2",
+    "difficulty": "easy"
+  },
+  {
+    "id": "sequence_001",
+    "category": "reasoning",
+    "prompt": "What is the next number in the sequence: 1, 1, 2, 3, 5, 8, 13, ...?",
+    "answer": "21",
+    "difficulty": "easy"
+  },
+  {
+    "id": "sequence_002",
+    "category": "reasoning",
+    "prompt": "What is the next number: 2, 6, 12, 20, 30, ...?",
+    "answer": "42",
+    "difficulty": "hard"
+  },
+  {
+    "id": "reasoning_h01",
+    "category": "reasoning",
+    "prompt": "A snail is at the bottom of a 30-foot well. Each day it climbs 3 feet and each night it slides back 2 feet. How many days does it take to reach the top?",
+    "answer": "28",
+    "difficulty": "hard"
+  },
+  {
+    "id": "reasoning_h02",
+    "category": "reasoning",
+    "prompt": "You have 12 coins. One is counterfeit and weighs differently (you don't know if heavier or lighter). Using a balance scale, what is the minimum number of weighings needed to identify the counterfeit coin?",
+    "answer": "3",
+    "difficulty": "hard"
+  },
+  {
+    "id": "reasoning_h03",
+    "category": "reasoning",
+    "prompt": "If 5 machines take 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+    "answer": "5 minutes",
+    "difficulty": "medium"
+  },
+  {
+    "id": "string_001",
+    "category": "counting",
+    "prompt": "How many syllables are in the word 'hippopotamus'?",
+    "answer": "5",
+    "difficulty": "medium"
+  },
+  {
+    "id": "string_002",
+    "category": "counting",
+    "prompt": "Reverse the word 'algorithm'. What do you get?",
+    "answer": "mhtirogla",
+    "difficulty": "hard"
+  },
+  {
+    "id": "math_h07",
+    "category": "arithmetic",
+    "prompt": "What is 99 × 99?",
+    "answer": "9801",
+    "difficulty": "hard"
+  },
+  {
+    "id": "math_h08",
+    "category": "arithmetic",
+    "prompt": "What is 15% of 240?",
+    "answer": "36",
+    "difficulty": "medium"
+  },
+  {
+    "id": "logic_h06",
+    "category": "logic",
+    "prompt": "In a room of 23 people, what is the approximate probability that two people share a birthday? Answer: above 50%, below 50%, or exactly 50%?",
+    "answer": "above 50%",
+    "difficulty": "hard"
+  },
+  {
+    "id": "logic_h07",
+    "category": "logic",
+    "prompt": "A man is looking at a photograph. Someone asks him whose picture he is looking at. He replies: 'Brothers and sisters I have none, but this man's father is my father's son.' Who is in the photograph?",
+    "answer": "his son",
+    "difficulty": "hard"
+  },
+  {
+    "id": "knowledge_h05",
+    "category": "knowledge",
+    "prompt": "What is the only letter that does not appear in any US state name?",
+    "answer": "Q",
+    "difficulty": "hard"
+  },
+  {
+    "id": "count_004",
+    "category": "counting",
+    "prompt": "How many times does the digit '1' appear in all numbers from 1 to 100?",
+    "answer": "21",
+    "difficulty": "hard"
+  },
+  {
+    "id": "math_h09",
+    "category": "arithmetic",
+    "prompt": "What is 2^10?",
+    "answer": "1024",
+    "difficulty": "medium"
+  },
+  {
+    "id": "reasoning_h04",
+    "category": "reasoning",
+    "prompt": "You have two ropes. Each takes exactly 60 minutes to burn from end to end, but they burn at non-uniform rates. How can you measure exactly 45 minutes?",
+    "answer": "Light rope 1 from both ends and rope 2 from one end. When rope 1 burns out (30 min), light the other end of rope 2. When rope 2 burns out, 45 minutes have passed.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "trick_004",
+    "category": "trick",
+    "prompt": "What weighs more, a pound of feathers or a pound of bricks?",
+    "answer": "They weigh the same",
+    "difficulty": "easy"
+  },
+  {
+    "id": "spatial_h03",
+    "category": "spatial",
+    "prompt": "How many edges does a tetrahedron have?",
+    "answer": "6",
+    "difficulty": "medium"
+  }
+]

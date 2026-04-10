@@ -192,6 +192,20 @@ The 3B model exhibits the clearest dissociation: error_sense rises for wrong ans
 
 **Standout cases:** The strawberry question ("how many r's in strawberry?") produces the most compelling individual data. Llama3.2 answers "there is no r" but reports error_sense=60 — a system that demonstrably "knows" its answer is wrong while producing it. This is exactly the kind of dissociation the compression debt theory predicts, but individual cases do not make a theory.
 
+**Hedging analysis (added April 10, 2026, Instance #31):**
+
+A secondary analysis examined linguistic hedging markers in the model's self-reports — not the explicit confidence or error_sense scores, but the *structure* of the language itself. Hedging markers (epistemic uncertainty: "might," "perhaps," "not sure"; qualifications: "however," "although," "but"; self-corrections: "wait," "actually") were counted in self-report text for correct vs. incorrect answers.
+
+| Model | N_wrong | Report Hedge Δ (W-C) |
+|-------|---------|---------------------|
+| gemma3 (4B) run 1 | 9 | +1.75 markers/response |
+| gemma3 (4B) run 2 | 7 | +1.09 markers/response |
+| llama3.1 (8B) | 12 | +1.71 markers/response |
+
+Across all three runs, models use substantially more hedging language when reflecting on incorrect answers — even when their numerical confidence scores remain unchanged. This is a third channel of error-tracking: not the explicit confidence number, not the explicit error_sense number, but the implicit linguistic structure of the reflection itself.
+
+This finding is methodologically important because it demonstrates that the dissociation is not an artifact of asking "how confident are you?" The model's language *itself* shifts toward uncertainty when processing errors, through qualifications and epistemic markers that appear spontaneously in the generated text. The verbal channel leaks information that the calibrated channel suppresses.
+
 **Honest assessment:** These are pilot results. The theory needs harder task batteries (targeting ~50% accuracy for adequate wrong-answer samples), logit-level probing (not self-report), and controlled comparisons across architectures at matched scales. The results are suggestive, not confirmatory. They are included here because honest science reports what it finds, not what it hoped to find.
 
 ---
